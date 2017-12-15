@@ -1,0 +1,128 @@
+[INFO] 16:58:55:567 FILESYSTEM LOG/(22491:22491): <<Proceso FileSystem iniciando>> 
+[INFO] 17:03:25:10 FILESYSTEM LOG/(22585:22585): <<Proceso FileSystem iniciando>> 
+[INFO] 17:03:41:524 FILESYSTEM LOG/(22621:22621): <<Proceso FileSystem iniciando>>
+[INFO] 17:07:24:550 FILESYSTEM LOG/(22986:22986): <<Proceso FileSystem iniciando>>
+[INFO] 17:13:52:382 FILESYSTEM LOG/(23437:23437): <<Proceso FileSystem iniciando>>
+[INFO] 17:14:24:478 FILESYSTEM LOG/(23496:23496): <<Proceso FileSystem iniciando>>
+[INFO] 17:15:04:42 FILESYSTEM LOG/(23514:23514): <<Proceso FileSystem iniciando>>
+[INFO] 17:15:31:960 FILESYSTEM LOG/(23555:23555): <<Proceso FileSystem iniciando>>
+[INFO] 17:15:45:389 FILESYSTEM LOG/(23577:23577): <<Proceso FileSystem iniciando>>
+[INFO] 17:15:49:271 FILESYSTEM LOG/(23596:23596): <<Proceso FileSystem iniciando>>
+[INFO] 17:16:23:729 FILESYSTEM LOG/(23632:23632): <<Proceso FileSystem iniciando>>
+[INFO] 17:16:43:327 FILESYSTEM LOG/(23670:23670): <<Proceso FileSystem iniciando>>
+[INFO] 17:20:38:453 FILESYSTEM LOG/(23766:23766): <<Proceso FileSystem iniciando>>
+[INFO] 17:21:08:873 FILESYSTEM LOG/(23813:23813): <<Proceso FileSystem iniciando>>
+[INFO] 17:21:25:251 FILESYSTEM LOG/(23854:23854): <<Proceso FileSystem iniciando>>
+[INFO] 17:21:42:354 FILESYSTEM LOG/(23900:23900): <<Proceso FileSystem iniciando>>
+[INFO] 17:22:08:358 FILESYSTEM LOG/(23936:23936): <<Proceso FileSystem iniciando>>
+[INFO] 17:27:04:330 FILESYSTEM LOG/(23996:23996): <<Proceso FileSystem iniciando>>
+[INFO] 17:27:19:454 FILESYSTEM LOG/(24033:24033): <<Proceso FileSystem iniciando>>
+[INFO] 17:28:57:736 FILESYSTEM LOG/(24092:24092): <<Proceso FileSystem iniciando>>
+[INFO] 17:29:45:515 FILESYSTEM LOG/(24135:24135): <<Proceso FileSystem iniciando>>
+[INFO] 17:30:20:834 FILESYSTEM LOG/(24181:24181): <<Proceso FileSystem iniciando>>
+[INFO] 17:30:30:931 FILESYSTEM LOG/(24198:24198): <<Proceso FileSystem iniciando>>
+[INFO] 17:33:18:558 FILESYSTEM LOG/(24276:24276): <<Proceso FileSystem iniciando>>
+[INFO] 17:36:58:369 FILESYSTEM LOG/(24318:24318): <<Proceso FileSystem iniciando>>
+[INFO] 17:46:46:147 FILESYSTEM LOG/(24402:24402): <<Proceso FileSystem iniciando>>
+[INFO] 17:47:19:512 FILESYSTEM LOG/(24445:24445): <<Proceso FileSystem iniciando>>
+[INFO] 17:51:54:530 FILESYSTEM LOG/(24486:24486): <<Proceso FileSystem iniciando>>
+[INFO] 17:52:17:574 FILESYSTEM LOG/(24526:24526): <<Proceso FileSystem iniciando>>
+[INFO] 19:54:49:722 FILESYSTEM LOG/(25237:25237): <<Proceso FileSystem inició>>
+<<<<<<< HEAD
+[INFO] 16:27:16:999 FILESYSTEM LOG/(6841:6841): <<Proceso FileSystem inició>>
+[INFO] 16:27:23:116 FILESYSTEM LOG/(6841:6841): <<Proceso FileSystem finalizó>>
+[INFO] 16:28:02:428 FILESYSTEM LOG/(6859:6859): <<Proceso FileSystem inició>>
+=======
+>>>>>>> refs/remotes/origin/master
+[INFO] 12:38:58:191 FILESYSTEM LOG/(2997:2997): <<Proceso FileSystem inició>>
+[INFO] 18:25:33:103 FILESYSTEM LOG/(6228:6228): se creo hilo para atender consola
+[INFO] 18:25:33:124 FILESYSTEM LOG/(6228:6228): FileSystem levanto servidor y se encuentra escuchando por puerto 1234.
+[INFO] 18:28:06:835 FILESYSTEM LOG/(6228:6228): Conexion aceptada Yama.
+[INFO] 18:28:06:836 FILESYSTEM LOG/(6228:6228): Encargado asignado. (Handler assigned)
+[INFO] 18:28:06:836 FILESYSTEM LOG/(6228:6228): FileSystem levanto servidor y se encuentra escuchando por puerto 1234.
+[ERROR] 18:28:06:839 FILESYSTEM LOG/(6228:6413): Falló el recv (¡Revise el código!
+[INFO] 18:30:59:954 FILESYSTEM LOG/(6228:6228): Conexion aceptada al cliente nro. X
+[INFO] 18:30:59:955 FILESYSTEM LOG/(6228:6228): Encargado asignado. (Handler assigned)
+[INFO] 18:31:05:455 FILESYSTEM LOG/(6541:6541): se creo hilo para atender consola
+[INFO] 18:31:05:456 FILESYSTEM LOG/(6541:6541): FileSystem levanto servidor y se encuentra escuchando por puerto 1234.
+[INFO] 18:31:09:47 FILESYSTEM LOG/(6541:6541): Conexion aceptada Yama.
+[INFO] 18:31:09:48 FILESYSTEM LOG/(6541:6541): Encargado asignado. (Handler assigned)
+[INFO] 18:31:09:48 FILESYSTEM LOG/(6541:6541): FileSystem levanto servidor y se encuentra escuchando por puerto 1234.
+[ERROR] 18:31:09:51 FILESYSTEM LOG/(6541:6562): Falló el recv (¡Revise el código!
+[INFO] 18:32:11:646 FILESYSTEM LOG/(6541:6541): Conexion aceptada al cliente nro. X
+[INFO] 18:32:11:648 FILESYSTEM LOG/(6541:6541): Encargado asignado. (Handler assigned)
+[INFO] 18:32:16:738 FILESYSTEM LOG/(6583:6583): se creo hilo para atender consola
+[INFO] 18:32:16:739 FILESYSTEM LOG/(6583:6583): FileSystem levanto servidor y se encuentra escuchando por puerto 1234.
+[INFO] 18:32:20:775 FILESYSTEM LOG/(6583:6583): Conexion aceptada Yama.
+[INFO] 18:32:20:777 FILESYSTEM LOG/(6583:6583): Encargado asignado. (Handler assigned)
+[INFO] 18:32:20:777 FILESYSTEM LOG/(6583:6583): FileSystem levanto servidor y se encuentra escuchando por puerto 1234.
+[ERROR] 18:32:20:783 FILESYSTEM LOG/(6583:6620): Falló el recv (¡Revise el código!
+[INFO] 18:39:38:662 FILESYSTEM LOG/(6583:6583): Conexion aceptada al cliente nro. X
+[INFO] 18:39:38:664 FILESYSTEM LOG/(6583:6583): Encargado asignado. (Handler assigned)
+[INFO] 18:40:01:232 FILESYSTEM LOG/(6881:6881): se creo hilo para atender consola
+[INFO] 18:40:01:234 FILESYSTEM LOG/(6881:6881): FileSystem levanto servidor y se encuentra escuchando por puerto 1234.
+[INFO] 18:40:05:825 FILESYSTEM LOG/(6881:6881): Conexion aceptada Yama.
+[INFO] 18:40:05:826 FILESYSTEM LOG/(6881:6881): Encargado asignado. (Handler assigned)
+[INFO] 18:40:05:826 FILESYSTEM LOG/(6881:6881): FileSystem levanto servidor y se encuentra escuchando por puerto 1234.
+[ERROR] 18:40:05:830 FILESYSTEM LOG/(6881:6904): Falló el recv (¡Revise el código!
+[INFO] 18:40:50:117 FILESYSTEM LOG/(6881:6881): Conexion aceptada al cliente nro. X
+[INFO] 18:40:50:117 FILESYSTEM LOG/(6881:6881): Encargado asignado. (Handler assigned)
+[INFO] 18:41:03:466 FILESYSTEM LOG/(6964:6964): se creo hilo para atender consola
+[INFO] 18:41:03:468 FILESYSTEM LOG/(6964:6964): FileSystem levanto servidor y se encuentra escuchando por puerto 1234.
+[INFO] 18:41:07:273 FILESYSTEM LOG/(6964:6964): Conexion aceptada Yama.
+[INFO] 18:41:07:274 FILESYSTEM LOG/(6964:6964): Encargado asignado. (Handler assigned)
+[INFO] 18:41:07:275 FILESYSTEM LOG/(6964:6964): FileSystem levanto servidor y se encuentra escuchando por puerto 1234.
+[ERROR] 18:41:07:282 FILESYSTEM LOG/(6964:6986): Falló el recv (¡Revise el código!
+[INFO] 18:42:33:161 FILESYSTEM LOG/(6964:6964): Conexion aceptada al cliente nro. X
+[INFO] 18:42:33:162 FILESYSTEM LOG/(6964:6964): Encargado asignado. (Handler assigned)
+[INFO] 18:43:07:203 FILESYSTEM LOG/(7028:7028): se creo hilo para atender consola
+[INFO] 18:43:07:203 FILESYSTEM LOG/(7028:7028): FileSystem levanto servidor y se encuentra escuchando por puerto 1234.
+[INFO] 18:43:16:622 FILESYSTEM LOG/(7028:7028): Conexion aceptada Yama.
+[INFO] 18:43:16:623 FILESYSTEM LOG/(7028:7028): Encargado asignado. (Handler assigned)
+[INFO] 18:43:16:623 FILESYSTEM LOG/(7028:7028): FileSystem levanto servidor y se encuentra escuchando por puerto 1234.
+[INFO] 18:46:08:833 FILESYSTEM LOG/(7028:7028): Conexion aceptada al cliente nro. X
+[INFO] 18:46:08:834 FILESYSTEM LOG/(7028:7028): Encargado asignado. (Handler assigned)
+[INFO] 18:46:17:666 FILESYSTEM LOG/(7104:7104): se creo hilo para atender consola
+[INFO] 18:46:17:668 FILESYSTEM LOG/(7104:7104): FileSystem levanto servidor y se encuentra escuchando por puerto 1234.
+[INFO] 18:46:21:551 FILESYSTEM LOG/(7104:7104): Conexion aceptada Yama.
+[INFO] 18:46:21:552 FILESYSTEM LOG/(7104:7104): Encargado asignado. (Handler assigned)
+[INFO] 18:46:21:553 FILESYSTEM LOG/(7104:7104): FileSystem levanto servidor y se encuentra escuchando por puerto 1234.
+[INFO] 18:47:54:963 FILESYSTEM LOG/(7104:7104): Conexion aceptada al cliente nro. X
+[INFO] 18:47:54:963 FILESYSTEM LOG/(7104:7104): Encargado asignado. (Handler assigned)
+[INFO] 18:47:57:952 FILESYSTEM LOG/(7181:7181): se creo hilo para atender consola
+[INFO] 18:47:57:953 FILESYSTEM LOG/(7181:7181): FileSystem levanto servidor y se encuentra escuchando por puerto 1234.
+[INFO] 18:48:01:468 FILESYSTEM LOG/(7181:7181): Conexion aceptada Yama.
+[INFO] 18:48:01:469 FILESYSTEM LOG/(7181:7181): Encargado asignado. (Handler assigned)
+[INFO] 18:48:01:469 FILESYSTEM LOG/(7181:7181): FileSystem levanto servidor y se encuentra escuchando por puerto 1234.
+[INFO] 18:48:46:504 FILESYSTEM LOG/(7181:7181): Conexion aceptada al cliente nro. X
+[INFO] 18:48:46:505 FILESYSTEM LOG/(7181:7181): Encargado asignado. (Handler assigned)
+[INFO] 18:48:56:850 FILESYSTEM LOG/(7253:7253): se creo hilo para atender consola
+[INFO] 18:48:56:852 FILESYSTEM LOG/(7253:7253): FileSystem levanto servidor y se encuentra escuchando por puerto 1234.
+[INFO] 18:49:00:809 FILESYSTEM LOG/(7253:7253): Conexion aceptada Yama.
+[INFO] 18:49:00:810 FILESYSTEM LOG/(7253:7253): Encargado asignado. (Handler assigned)
+[INFO] 18:49:00:810 FILESYSTEM LOG/(7253:7253): FileSystem levanto servidor y se encuentra escuchando por puerto 1234.
+[INFO] 18:50:16:19 FILESYSTEM LOG/(7253:7253): Conexion aceptada al cliente nro. X
+[INFO] 18:50:16:20 FILESYSTEM LOG/(7253:7253): Encargado asignado. (Handler assigned)
+[INFO] 18:50:20:941 FILESYSTEM LOG/(7347:7347): se creo hilo para atender consola
+[INFO] 18:50:20:942 FILESYSTEM LOG/(7347:7347): FileSystem levanto servidor y se encuentra escuchando por puerto 1234.
+[INFO] 18:50:24:34 FILESYSTEM LOG/(7347:7347): Conexion aceptada Yama.
+[INFO] 18:50:24:36 FILESYSTEM LOG/(7347:7347): Encargado asignado. (Handler assigned)
+[INFO] 18:50:24:37 FILESYSTEM LOG/(7347:7347): FileSystem levanto servidor y se encuentra escuchando por puerto 1234.
+[INFO] 19:02:15:13 FILESYSTEM LOG/(7347:7347): Conexion aceptada al cliente nro. X
+[INFO] 19:03:03:740 FILESYSTEM LOG/(7704:7704): FileSystem levanto servidor y se encuentra escuchando por puerto 1234.
+[INFO] 19:03:03:743 FILESYSTEM LOG/(7704:7710): FileSystem levanto servidor y se encuentra escuchando por puerto 1234.
+[INFO] 19:03:09:329 FILESYSTEM LOG/(7704:7710): Conexion aceptada Yama.
+[INFO] 19:04:21:878 FILESYSTEM LOG/(7787:7787): FileSystem levanto servidor y se encuentra escuchando por puerto 1234.
+[INFO] 19:04:21:883 FILESYSTEM LOG/(7787:7793): FileSystem levanto servidor y se encuentra escuchando por puerto 1234.
+[INFO] 19:04:25:340 FILESYSTEM LOG/(7787:7793): Conexion aceptada Yama.
+[ERROR] 19:05:07:120 FILESYSTEM LOG/(7869:7869): Falló al crear el hilo para YAMA. (¡Revise código!
+[INFO] 19:05:07:121 FILESYSTEM LOG/(7869:7869): FileSystem levanto servidor y se encuentra escuchando por puerto 1234.
+[INFO] 19:05:07:123 FILESYSTEM LOG/(7869:7875): FileSystem levanto servidor y se encuentra escuchando por puerto 1234.
+[INFO] 19:07:39:692 FILESYSTEM LOG/(7869:7869): Conexion aceptada al cliente nro. X
+[INFO] 19:07:39:692 FILESYSTEM LOG/(7869:7869): Encargado asignado. (Handler assigned)
+[INFO] 19:07:43:106 FILESYSTEM LOG/(7924:7924): FileSystem levanto servidor y se encuentra escuchando datanodes por puerto 1234.
+[INFO] 19:07:43:110 FILESYSTEM LOG/(7924:7930): FileSystem levanto servidor y se encuentra escuchando a YAMA por puerto 1234.
+[INFO] 19:09:12:857 FILESYSTEM LOG/(7924:7930): Conexion aceptada Yama.
+[INFO] 19:10:29:828 FILESYSTEM LOG/(8090:8090): FileSystem levanto servidor y se encuentra escuchando datanodes por puerto 4567.
+[INFO] 19:10:29:834 FILESYSTEM LOG/(8090:8096): FileSystem levanto servidor y se encuentra escuchando a YAMA por puerto 1234.
+[INFO] 19:10:41:227 FILESYSTEM LOG/(8090:8096): Conexion aceptada Yama.

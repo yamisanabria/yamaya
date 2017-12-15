@@ -1,0 +1,97 @@
+[INFO] 15:49:01:142 WORKER LOG/(11550:11550): <<Proceso Worker inició>>
+[INFO] 15:49:01:142 WORKER LOG/(11550:11550): Intentando levantar el archivo de configuraciones.
+[INFO] 15:49:01:142 WORKER LOG/(11550:11550): El nombre del Nodo es: NODO1
+[INFO] 15:49:01:142 WORKER LOG/(11550:11550): El puerto del Worker es: 5050
+[INFO] 15:49:01:142 WORKER LOG/(11550:11550): La ruta del Data.Bin es: /home/utnso/data.bin
+[DEBUG] 15:49:01:142 WORKER LOG/(11550:11550): Se cargaron correctamente las configuraciones.
+[INFO] 15:51:09:765 WORKER LOG/(11550:11550): <<Proceso Worker finalizó>>
+[INFO] 15:55:41:96 WORKER LOG/(11598:11598): <<Proceso Worker inició>>
+[INFO] 15:55:41:96 WORKER LOG/(11598:11598): Intentando levantar el archivo de configuraciones.
+[INFO] 15:55:41:96 WORKER LOG/(11598:11598): El nombre del Nodo es: NODO1
+[INFO] 15:55:41:96 WORKER LOG/(11598:11598): El puerto del Worker es: 5050
+[INFO] 15:55:41:96 WORKER LOG/(11598:11598): La ruta del Data.Bin es: /home/utnso/data.bin
+[DEBUG] 15:55:41:96 WORKER LOG/(11598:11598): Se cargaron correctamente las configuraciones.
+[INFO] 15:59:19:468 WORKER LOG/(11598:11598): <<Proceso Worker finalizó>>
+[INFO] 15:59:32:573 WORKER LOG/(11608:11608): <<Proceso Worker inició>>
+[INFO] 15:59:32:573 WORKER LOG/(11608:11608): Intentando levantar el archivo de configuraciones.
+[INFO] 15:59:32:573 WORKER LOG/(11608:11608): El nombre del Nodo es: NODO1
+[INFO] 15:59:32:573 WORKER LOG/(11608:11608): El puerto del Worker es: 5050
+[INFO] 15:59:32:573 WORKER LOG/(11608:11608): La ruta del Data.Bin es: /home/utnso/data.bin
+[DEBUG] 15:59:32:573 WORKER LOG/(11608:11608): Se cargaron correctamente las configuraciones.
+[INFO] 15:59:39:282 WORKER LOG/(11608:11608): <<Proceso Worker finalizó>>
+[INFO] 16:00:09:13 WORKER LOG/(11618:11618): <<Proceso Worker inició>>
+[INFO] 16:00:09:13 WORKER LOG/(11618:11618): Intentando levantar el archivo de configuraciones.
+[INFO] 16:00:09:13 WORKER LOG/(11618:11618): El nombre del Nodo es: NODO1
+[INFO] 16:00:09:13 WORKER LOG/(11618:11618): El puerto del Worker es: 5050
+[INFO] 16:00:09:13 WORKER LOG/(11618:11618): La ruta del Data.Bin es: /home/utnso/data.bin
+[DEBUG] 16:00:09:13 WORKER LOG/(11618:11618): Se cargaron correctamente las configuraciones.
+[INFO] 16:01:33:538 WORKER LOG/(11618:11618): <<Proceso Worker finalizó>>
+[INFO] 16:01:39:356 WORKER LOG/(11635:11635): <<Proceso Worker inició>>
+[INFO] 16:01:39:356 WORKER LOG/(11635:11635): Intentando levantar el archivo de configuraciones.
+[INFO] 16:01:39:356 WORKER LOG/(11635:11635): El nombre del Nodo es: NODO1
+[INFO] 16:01:39:356 WORKER LOG/(11635:11635): El puerto del Worker es: 5050
+[INFO] 16:01:39:356 WORKER LOG/(11635:11635): La ruta del Data.Bin es: /home/utnso/data.bin
+[DEBUG] 16:01:39:356 WORKER LOG/(11635:11635): Se cargaron correctamente las configuraciones.
+[INFO] 16:01:52:297 WORKER LOG/(11635:11635): <<Proceso Worker finalizó>>
+[INFO] 16:02:25:499 WORKER LOG/(11650:11650): <<Proceso Worker inició>>
+[INFO] 16:02:25:499 WORKER LOG/(11650:11650): Intentando levantar el archivo de configuraciones.
+[INFO] 16:02:25:499 WORKER LOG/(11650:11650): El nombre del Nodo es: NODO1
+[INFO] 16:02:25:499 WORKER LOG/(11650:11650): El puerto del Worker es: 5050
+[INFO] 16:02:25:499 WORKER LOG/(11650:11650): La ruta del Data.Bin es: /home/utnso/data.bin
+[DEBUG] 16:02:25:499 WORKER LOG/(11650:11650): Se cargaron correctamente las configuraciones.
+[INFO] 16:03:53:662 WORKER LOG/(11650:11650): <<Proceso Worker finalizó>>
+[INFO] 16:03:56:586 WORKER LOG/(11662:11662): <<Proceso Worker inició>>
+[INFO] 16:03:56:586 WORKER LOG/(11662:11662): Intentando levantar el archivo de configuraciones.
+[INFO] 16:03:56:586 WORKER LOG/(11662:11662): El nombre del Nodo es: NODO1
+[INFO] 16:03:56:586 WORKER LOG/(11662:11662): El puerto del Worker es: 5050
+[INFO] 16:03:56:586 WORKER LOG/(11662:11662): La ruta del Data.Bin es: /home/utnso/data.bin
+[DEBUG] 16:03:56:586 WORKER LOG/(11662:11662): Se cargaron correctamente las configuraciones.
+[INFO] 16:09:30:782 WORKER LOG/(11714:11714): <<Proceso Worker inició>>
+[INFO] 16:09:30:782 WORKER LOG/(11714:11714): Intentando levantar el archivo de configuraciones.
+[INFO] 16:09:30:782 WORKER LOG/(11714:11714): El nombre del Nodo es: NODO1
+[INFO] 16:09:30:782 WORKER LOG/(11714:11714): El puerto del Worker es: 5050
+[INFO] 16:09:30:782 WORKER LOG/(11714:11714): La ruta del Data.Bin es: /home/utnso/data.bin
+[DEBUG] 16:09:30:782 WORKER LOG/(11714:11714): Se cargaron correctamente las configuraciones.
+[INFO] 16:21:56:939 WORKER LOG/(11810:11810): <<Proceso Worker inició>>
+[INFO] 16:21:56:940 WORKER LOG/(11810:11810): Intentando levantar el archivo de configuraciones.
+[INFO] 16:21:56:940 WORKER LOG/(11810:11810): El nombre del Nodo es: NODO1
+[INFO] 16:21:56:940 WORKER LOG/(11810:11810): El puerto del Worker es: 5050
+[INFO] 16:21:56:940 WORKER LOG/(11810:11810): La ruta del Data.Bin es: /home/utnso/data.bin
+[DEBUG] 16:21:56:940 WORKER LOG/(11810:11810): Se cargaron correctamente las configuraciones.
+[INFO] 16:21:58:779 WORKER LOG/(11811:11811): <<Proceso Worker inició>>
+[INFO] 16:21:58:780 WORKER LOG/(11811:11811): Intentando levantar el archivo de configuraciones.
+[INFO] 16:21:58:780 WORKER LOG/(11811:11811): El nombre del Nodo es: NODO1
+[INFO] 16:21:58:780 WORKER LOG/(11811:11811): El puerto del Worker es: 5050
+[INFO] 16:21:58:780 WORKER LOG/(11811:11811): La ruta del Data.Bin es: /home/utnso/data.bin
+[DEBUG] 16:21:58:780 WORKER LOG/(11811:11811): Se cargaron correctamente las configuraciones.
+[INFO] 16:22:09:803 WORKER LOG/(11816:11816): <<Proceso Worker inició>>
+[INFO] 16:22:09:803 WORKER LOG/(11816:11816): Intentando levantar el archivo de configuraciones.
+[INFO] 16:22:09:803 WORKER LOG/(11816:11816): El nombre del Nodo es: NODO1
+[INFO] 16:22:09:804 WORKER LOG/(11816:11816): El puerto del Worker es: 5050
+[INFO] 16:22:09:804 WORKER LOG/(11816:11816): La ruta del Data.Bin es: /home/utnso/data.bin
+[DEBUG] 16:22:09:804 WORKER LOG/(11816:11816): Se cargaron correctamente las configuraciones.
+[INFO] 18:39:57:647 WORKER LOG/(14075:14075): <<Proceso Worker inició>>
+[INFO] 18:39:57:647 WORKER LOG/(14075:14075): Intentando levantar el archivo de configuraciones.
+[INFO] 18:39:57:647 WORKER LOG/(14075:14075): El nombre del Nodo es: NODO1
+[INFO] 18:39:57:647 WORKER LOG/(14075:14075): El puerto del Worker es: 5050
+[INFO] 18:39:57:647 WORKER LOG/(14075:14075): La ruta del Data.Bin es: /home/utnso/data.bin
+[DEBUG] 18:39:57:647 WORKER LOG/(14075:14075): Se cargaron correctamente las configuraciones.
+[ERROR] 23:36:40:256 WORKER LOG/(14075:14764): No se puede recibir información. (RECV)
+[INFO] 23:40:31:152 WORKER LOG/(14893:14893): <<Proceso Worker inició>>
+[INFO] 23:40:31:152 WORKER LOG/(14893:14893): Intentando levantar el archivo de configuraciones.
+[INFO] 23:40:31:152 WORKER LOG/(14893:14893): El nombre del Nodo es: NODO1
+[INFO] 23:40:31:152 WORKER LOG/(14893:14893): El puerto del Worker es: 5050
+[INFO] 23:40:31:152 WORKER LOG/(14893:14893): La ruta del Data.Bin es: /home/utnso/data.bin
+[DEBUG] 23:40:31:152 WORKER LOG/(14893:14893): Se cargaron correctamente las configuraciones.
+[INFO] 23:48:42:104 WORKER LOG/(14998:14998): <<Proceso Worker inició>>
+[INFO] 23:48:42:104 WORKER LOG/(14998:14998): Intentando levantar el archivo de configuraciones.
+[INFO] 23:48:42:104 WORKER LOG/(14998:14998): El nombre del Nodo es: NODO1
+[INFO] 23:48:42:104 WORKER LOG/(14998:14998): El puerto del Worker es: 5050
+[INFO] 23:48:42:104 WORKER LOG/(14998:14998): La ruta del Data.Bin es: /home/utnso/data.bin
+[DEBUG] 23:48:42:104 WORKER LOG/(14998:14998): Se cargaron correctamente las configuraciones.
+[INFO] 23:55:25:163 WORKER LOG/(15335:15335): <<Proceso Worker inició>>
+[INFO] 23:55:25:163 WORKER LOG/(15335:15335): Intentando levantar el archivo de configuraciones.
+[INFO] 23:55:25:163 WORKER LOG/(15335:15335): El nombre del Nodo es: NODO1
+[INFO] 23:55:25:163 WORKER LOG/(15335:15335): El puerto del Worker es: 5050
+[INFO] 23:55:25:163 WORKER LOG/(15335:15335): La ruta del Data.Bin es: /home/utnso/data.bin
+[DEBUG] 23:55:25:163 WORKER LOG/(15335:15335): Se cargaron correctamente las configuraciones.

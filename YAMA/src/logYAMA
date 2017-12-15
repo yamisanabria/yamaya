@@ -1,0 +1,49 @@
+[INFO] 22:12:39:204 YAMA LOG/(4542:4542): <<Proceso YAMA iniciando>> (CARGANDO CONFIGURACIONES)
+[INFO] 22:12:39:204 YAMA LOG/(4542:4542): Intentando levantar el archivo de configuraciones.
+[ERROR] 22:12:39:204 YAMA LOG/(4542:4542): Error el archivo no existe.
+[INFO] 22:13:49:532 YAMA LOG/(4615:4615): <<Proceso YAMA iniciando>> (CARGANDO CONFIGURACIONES)
+[INFO] 22:13:49:532 YAMA LOG/(4615:4615): Intentando levantar el archivo de configuraciones.
+[INFO] 22:13:49:532 YAMA LOG/(4615:4615): La IP del File System es: 127.0.0.1
+[INFO] 22:13:49:532 YAMA LOG/(4615:4615): El puerto del File System es: 1234
+[INFO] 22:13:49:532 YAMA LOG/(4615:4615): El tiempo de retardo para la planificación definido es: 0 ms.
+[INFO] 22:13:49:532 YAMA LOG/(4615:4615): Definido el algoritmo de balanceo como: SIN-DEFINIR-ALGORITMO
+[INFO] 22:13:49:532 YAMA LOG/(4615:4615): Intentando levantar conexión con File System.
+[INFO] 22:13:49:532 YAMA LOG/(4615:4615): <<Proceso YAMA Finalizado>>
+[INFO] 22:19:18:808 YAMA LOG/(4681:4681): <<Proceso YAMA iniciando>> (CARGANDO CONFIGURACIONES)
+[INFO] 22:19:18:808 YAMA LOG/(4681:4681): Intentando levantar el archivo de configuraciones.
+[INFO] 22:19:18:808 YAMA LOG/(4681:4681): La IP del File System es: 127.0.0.1
+[INFO] 22:19:18:808 YAMA LOG/(4681:4681): El puerto del File System es: 1234
+[INFO] 22:19:18:808 YAMA LOG/(4681:4681): El tiempo de retardo para la planificación definido es: 0 ms.
+[INFO] 22:19:18:808 YAMA LOG/(4681:4681): Definido el algoritmo de balanceo como: SIN-DEFINIR-ALGORITMO
+[INFO] 22:19:18:808 YAMA LOG/(4681:4681): Intentando levantar conexión con File System.
+[INFO] 22:19:18:808 YAMA LOG/(4681:4681): <<Proceso YAMA Finalizado>>
+[INFO] 22:25:26:964 YAMA LOG/(4853:4853): <<Proceso YAMA iniciando>> (CARGANDO CONFIGURACIONES)
+[INFO] 22:25:26:964 YAMA LOG/(4853:4853): Intentando levantar el archivo de configuraciones.
+[INFO] 22:25:26:964 YAMA LOG/(4853:4853): La IP del File System es: 127.0.0.1
+[INFO] 22:25:26:964 YAMA LOG/(4853:4853): El puerto del File System es: 1234
+[INFO] 22:25:26:964 YAMA LOG/(4853:4853): El tiempo de retardo para la planificación definido es: 0 ms.
+[INFO] 22:25:26:964 YAMA LOG/(4853:4853): Definido el algoritmo de balanceo como: SIN-DEFINIR-ALGORITMO
+[INFO] 22:25:26:964 YAMA LOG/(4853:4853): Intentando levantar conexión con File System.
+[INFO] 22:25:26:964 YAMA LOG/(4853:4853): <<Proceso YAMA Finalizado>>
+[INFO] 19:28:11:289 YAMA LOG/(3710:3710): <<Proceso YAMA iniciando>> (CARGANDO CONFIGURACIONES)
+[INFO] 19:28:11:289 YAMA LOG/(3710:3710): El puerto del File System es: 1234
+[INFO] 19:28:11:289 YAMA LOG/(3710:3710): El tiempo de retardo para la planificación definido es: 0 ms.
+[INFO] 19:28:11:289 YAMA LOG/(3710:3710): Definido el algoritmo de balanceo como: SIN-DEFINIR-ALGORITMO
+[INFO] 19:28:11:289 YAMA LOG/(3710:3710): YAMA levanto servidor y se encuentra escuchando por puerto 9262.
+[INFO] 19:28:27:641 YAMA LOG/(3710:3710): Master conectado, asignado como el cliente Nro.5.
+[INFO] 19:28:27:641 YAMA LOG/(3710:3710): <<Proceso YAMA Finalizado>>
+[INFO] 19:28:27:641 YAMA LOG/(3710:3710): <<Proceso YAMA iniciando>> (CARGANDO CONFIGURACIONES)
+[INFO] 19:28:27:642 YAMA LOG/(3710:3710): El puerto del File System es: 1234
+[INFO] 19:28:27:642 YAMA LOG/(3710:3710): El tiempo de retardo para la planificación definido es: 0 ms.
+[INFO] 19:28:27:642 YAMA LOG/(3710:3710): Definido el algoritmo de balanceo como: SIN-DEFINIR-ALGORITMO
+[INFO] 19:40:35:639 YAMA LOG/(3791:3791): <<Proceso YAMA iniciando>> (CARGANDO CONFIGURACIONES)
+[INFO] 19:40:35:639 YAMA LOG/(3791:3791): El puerto del File System es: 1234
+[INFO] 19:40:35:639 YAMA LOG/(3791:3791): El tiempo de retardo para la planificación definido es: 0 ms.
+[INFO] 19:40:35:639 YAMA LOG/(3791:3791): Definido el algoritmo de balanceo como: SIN-DEFINIR-ALGORITMO
+[INFO] 19:40:35:639 YAMA LOG/(3791:3791): YAMA levanto servidor y se encuentra escuchando por puerto 9262.
+[INFO] 19:41:36:540 YAMA LOG/(3791:3791): Master conectado, asignado como el cliente Nro.5.
+[INFO] 19:41:36:543 YAMA LOG/(3791:3791): <<Proceso YAMA Finalizado>>
+[INFO] 19:41:36:543 YAMA LOG/(3791:3791): <<Proceso YAMA iniciando>> (CARGANDO CONFIGURACIONES)
+[INFO] 19:41:36:543 YAMA LOG/(3791:3791): El puerto del File System es: 1234
+[INFO] 19:41:36:543 YAMA LOG/(3791:3791): El tiempo de retardo para la planificación definido es: 0 ms.
+[INFO] 19:41:36:543 YAMA LOG/(3791:3791): Definido el algoritmo de balanceo como: SIN-DEFINIR-ALGORITMO
