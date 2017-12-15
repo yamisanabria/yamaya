@@ -13,7 +13,7 @@
 
 void cargarConfiguraciones() {
 
-	configuration = config_create("/home/utnso/workspace/tp-2017-2c-Yamaya/CONFIG_NODO1");
+	configuration = config_create("/home/utnso/workspace/tp-2017-2c-Yamaya/branches/socketsSimples/CONFIG_NODO");
 	log_info(logger, "Intentando levantar el archivo de configuraciones.");
 
 	if(configuration==NULL){
@@ -74,19 +74,6 @@ void cargarConfiguraciones() {
 
 			configOk = 0;
 	}
-
-	if (config_has_property(configuration, "TAMAÑO_DATABIN_MB")) {
-
-							tam_dataBin = config_get_int_value(configuration, "TAMAÑO_DATABIN_MB");
-
-							log_info(logger, "El tamaño del DataBin es: %i", tam_dataBin);
-
-						} else {
-
-							log_error(logger, "Error al obtener el tamaño del DataBin");
-
-							configOk = 0;
-						}
 	strcpy(ip_nodo_actual,config_get_string_value(configuration, "IP_NODO"));
 				log_info(logger, "La IP del nodo actual es: %s", ip_nodo_actual);
 
@@ -97,20 +84,7 @@ void cargarConfiguraciones() {
 
 }
 
-void validarDesconexionFS(int8_t* status){
-	if (*status == 0 || *status == -1) {
-		sem_wait(&mutex_log);
-		log_error(logger, "FileSystem desconectado\n");
-		sem_post(&mutex_log);
-		sem_wait(&mutex_log);
-		log_error(logger, "Abortando...\n");
-		sem_post(&mutex_log);
-		abort();
-	}
-}
-
 void inicializar (){
-
 	dir_temp = string_new();
 	arch_bin = string_new();
 
@@ -121,33 +95,16 @@ void inicializar (){
 	// archivo de configuracion
 	cargarConfiguraciones();
 
-	FILE* bin;
 
-		if ((bin = fopen(rutaDataBin, "w+b")) == NULL) {
-				log_error(logger, "Error al al crear archivo DataBin\n");
-				abort();
-		}else{
-			log_info(logger, "Archivo Databin abierto correctamente");
-		}
-
-	long long int tamanio_arch_bin = 1024*1024*tam_dataBin;
-	log_info(logger,"Tamanio archivo bin: %d",tamanio_arch_bin);
-
-	char* bufferBin;
-	bufferBin = (char*) malloc (sizeof(char) * tamanio_arch_bin);
-	memset(bufferBin,'\0',tamanio_arch_bin);
-	fwrite(bufferBin,1,tamanio_arch_bin,bin);
-
+	long long int tamanio_arch_bin = 1024*1024*20;
+	log_info(logger,"Tamanio archivo bin: %lld",tamanio_arch_bin);
 	long long int bloque = 1024*1024;
 	cant_max_bloques = (int)(tamanio_arch_bin/ bloque);
 	log_info(logger,"Cantidad maxima de bloques que soporta el nodo: %d",cant_max_bloques);
 
-	fclose(bin);
-
-	mapeo = mapearAMemoria(rutaDataBin);
-
 	sem_init(&mutex_log,0,1);
 }
+
 
 int conectar_cliente (int puerto, char ip_destino[16],t_log* logger){
 	log_info(logger, "Intentando levantar conexión con FS.");
@@ -194,179 +151,20 @@ void conectar_FS(void){
 	}
 
 	enviar_saludo(DATANODE,sockFS,logger,HANDSHAKE);
+	recibir_saludo(FILESYSTEM,sockFS,logger,HANDSHAKEOK);
 	log_info(logger,"Se establecio conexion con Filesystem");
 	printf("Se establecio conexion con Filesystem \n");
 
-	log_info(logger, "Envio todos mis datos al File System\n");
-	enviarDatos_FS();
-	log_info(logger,"Datos enviados correctamente");
+	log_info(logger, "Envio todos mis datos al File System.");
 
-	//creo un hilo para escuchar las operaciones del fs
-	pthread_create(&thEscucharFS, NULL,crearListenerFS, NULL);
+	//creo el hilo para atender FS
+	pthread_t thFS;
+	pthread_create(&thFS, NULL,(void*)enviarDatos_FS, NULL);
 	log_info(logger, "Se ha creado el hilo para atender FILESYSTEM");
-	pthread_join(thEscucharFS, NULL);
+
+	pthread_join(thFS, NULL);
 
 }
-
-void* crearListenerFS(void* param){
-	int8_t estado = 1;
-
-		while (estado) {
-
-
-			realizarOperacionFS(sockFS, &estado);
-		}
-
-	return param;
-}
-
-char* mapearAMemoria(char* RutaDelArchivo){
-		int mapper;
-		char* mapeo2;
-		FILE* bin;
-		uint64_t tamanio;
-
-		if ((bin = fopen(RutaDelArchivo, "r+t")) == NULL) {
-			//Si no se pudo abrir, imprimir el error
-			log_error(logger, "Error al abrir el archivo: %s\n", RutaDelArchivo);
-		}
-
-		mapper = fileno(bin);
-		tamanio = tamanioArchivo(bin);
-
-		if ((mapeo2 = mmap( NULL, tamanio, PROT_READ|PROT_WRITE, MAP_SHARED|MAP_NORESERVE, mapper, 0)) == MAP_FAILED) {
-			//Si no se pudo ejecutar el MMAP, imprimir el error
-			log_error(logger,
-					"Error al ejecutar MMAP del archivo %s de tamaño %d\n",
-					RutaDelArchivo, tamanio);
-		}
-
-		close(mapper);
-		fclose(bin);
-		return mapeo2;
-	}
-
-int tamanioArchivo(FILE* bin) {
-	struct stat st;
-
-	int descriptor_archivo = fileno(bin);
-	fstat(descriptor_archivo, &st);
-
-	return st.st_size;
-}
-
-void realizarOperacionFS(int socket, int8_t* estado) {
-	uint8_t cod_operacion;
-	uint16_t numero_bloque;
-	int resultado = 1;
-	uint32_t tamanio_cont_temp;
-	uint8_t tamanio_nombre;
-	uint32_t tamanio_contenido;
-	uint32_t tamanio_datos;
-	uint32_t comparacion = 0;
-	uint8_t buffer_size;
-	char* datos_tmp;
-	char* datos;
-	char* nombre_archivo;
-	char* contenido_bloque;
-	char* contenido_temporal;
-	char *buffer;
-
-	t_datos datosRecibidos;
-
-    log_info(logger,"Esperando código de operación para trabajar");
-
-    *estado = recibirYDeserializar(&datosRecibidos, socket);
-	validarDesconexionFS(estado);
-
-	cod_operacion = datosRecibidos.codigo_operacion;
-	sem_wait(&mutex_log);
-	log_debug(logger, "Recibi el siguiente codigo de operacion: %i\n", cod_operacion);
-	sem_post(&mutex_log);
-
-
-	switch (cod_operacion) {
-
-		case GET_BLOQUE:
-/*			*estado = recv(socket, &numero_bloque, sizeof(numero_bloque), 0);
-			validarDesconexionFS(estado);
-			sem_wait(&mutex_log);
-			log_info(logger, "Solicitud para obtener el bloque: %d\n", numero_bloque);
-			sem_post(&mutex_log);
-
-			break;*/
-
-		case SET_BLOQUE:
-
-			validarDesconexionFS(estado);
-
-			numero_bloque = datosRecibidos.numero_bloque;
-
-			sem_wait(&mutex_log);
-			log_info(logger, "Solicitud para setear el bloque: %d\n", numero_bloque);
-			sem_post(&mutex_log);
-
-			buffer = malloc(buffer_size = sizeof(datosRecibidos.tam_datos));
-
-			memcpy(&tamanio_datos, buffer, buffer_size);
-			free(buffer);
-			datos = string_new();
-			datos_tmp = malloc(tamanio_datos+1);
-			memset(datos_tmp,'\0',tamanio_datos+1);
-
-				string_append(&datosRecibidos.datos,datos_tmp);
-				memset(datos_tmp,'\0',tamanio_datos+1);
-
-			sem_wait(&mutex_log);
-			log_info(logger, "Recibi los datos a setear\n");
-			sem_post(&mutex_log);
-			log_info(logger,"Recibi el tamanio de los datos a setear %d\n", tamanio_datos);
-
-			if (comparacion == tamanio_datos) {
-				resultado = setBloque(numero_bloque, datos);
-
-			if (resultado == 0){
-				sem_wait(&mutex_log);
-				log_info(logger, "La operacion de seteado se realizo correctamente\n");
-				sem_post(&mutex_log);
-				if(msync(mapeo+(numero_bloque*TAMANIO_BLOQUE),tamanio_datos,MS_SYNC)==-1){
-					sem_wait(&mutex_log);
-					log_error(logger,"Error al ejecutar msync del espacio mapeado en memoria");
-					sem_post(&mutex_log);
-				}
-			}
-
-			*estado = send(socket,&resultado, sizeof(resultado),0);
-						validarDesconexionFS(estado);
-
-			if (estado != 0){
-				sem_wait(&mutex_log);
-				log_error(logger, "El seteado no pudo realizarse\n");
-				sem_post(&mutex_log);
-			}
-
-			free(datos_tmp);
-			free(datos);
-
-			break;
-
-			}
-	}
-}
-
-uint8_t setBloque(uint16_t numero_bloque, char* datos) {
-
-	uint32_t posicion = numero_bloque*TAMANIO_BLOQUE;
-
-	strcpy(mapeo+posicion,datos);
-
-	//Agregamos un '\0' al final
-	mapeo[posicion+string_length(datos)+1] = '\0';
-
-	return 0;
-
-}
-
 
 void enviarDatos_FS (){
 
@@ -377,29 +175,20 @@ void enviarDatos_FS (){
 		nodoAenviar.ipNodo_long = string_length(ip_nodo_actual);
 		nodoAenviar.puertoNodo = puertoWorker;
 		nodoAenviar.puertoNodo_long = sizeof(puertoWorker);
-		nodoAenviar.nombreNodo = malloc(sizeof(nombreNodo));
+		nodoAenviar.nombreNodo = malloc(sizeof(ip_nodo_actual));
 		nodoAenviar.nombreNodo = nombreNodo;
 		nodoAenviar.nombreNodo_long = string_length(nombreNodo);
 		nodoAenviar.cantidad_bloques_long = sizeof(cant_max_bloques);
-		nodoAenviar.cantidad_bloques = cant_max_bloques;
+		nodoAenviar.cantidad_bloques =cant_max_bloques;
 
 
 		char* paqueteSerializado;
-
-		nodoAenviar.total_size = sizeof(nodoAenviar.ipNodo_long) +
-						nodoAenviar.ipNodo_long +
-						sizeof(nodoAenviar.puertoNodo_long) +
-						nodoAenviar.puertoNodo_long +
-						sizeof(nodoAenviar.nombreNodo_long) +
-						nodoAenviar.nombreNodo_long +
-						sizeof(nodoAenviar.cantidad_bloques_long) +
-						nodoAenviar.cantidad_bloques;
-
+		nodoAenviar.total_size = sizeof(nodoAenviar.ipNodo) + nodoAenviar.ipNodo_long + sizeof(nodoAenviar.puertoNodo_long) + nodoAenviar.puertoNodo_long + sizeof(nodoAenviar.nombreNodo_long) + nodoAenviar.nombreNodo_long + sizeof(nodoAenviar.cantidad_bloques_long) + nodoAenviar.cantidad_bloques_long;
 		paqueteSerializado = serializarEstructura(&nodoAenviar);
 		send(sockFS, paqueteSerializado, nodoAenviar.total_size,0);
 
 		sem_wait(&mutex_log);
-		log_info(logger, "Envie a FileSystem: ip=%s, puerto=%d, nombre=%s, cantidad bloques=%d\n",nodoAenviar.ipNodo,nodoAenviar.puertoNodo ,nodoAenviar.nombreNodo, nodoAenviar.cantidad_bloques);
+		log_info(logger, "Envie a FileSystem: ip=%s, puerto=%i, nombre=%s, cantidad bloques=%i\n",nodoAenviar.ipNodo,nodoAenviar.puertoNodo ,nodoAenviar.nombreNodo, nodoAenviar.cantidad_bloques);
 		sem_post(&mutex_log);
 		dispose_package(&paqueteSerializado);
 }
@@ -441,8 +230,6 @@ char* serializarEstructura(t_datanode* estructura){
 	size =  estructura->cantidad_bloques;
 	memcpy(paqueteSerializado + offset, &(estructura->cantidad_bloques), size);
 
-	offset += size;
-
 	return paqueteSerializado;
 }
 
@@ -450,73 +237,92 @@ void dispose_package(char **package){
 	free(*package);
 }
 
-int recibirYDeserializar(t_datos *datosRecibidos, int sockFS) {
+int enviar_saludo(int id_origen, int sock, t_log* logger,int tipo_mensaje){
 
-	int estado = 1;
-	int tam_buffer;
-	char* buffer = malloc(tam_buffer = sizeof(uint16_t));
+	// inicializo variables
+	char* buffer;
+	int numbytes;
 
-	//Obtengo los datos
-	uint8_t datos_long;
-	estado = recv(sockFS, buffer, sizeof(datosRecibidos->tam_datos), 0);
-	if (!estado)return 0;
-		memcpy(&(datos_long), buffer, tam_buffer);
+	//creo el buffer
+	if((buffer = (char*) malloc (sizeof(char) * MAXDATASIZE)) == NULL)
+	{
+		log_error(logger,"Error al reservar memoria para el buffer");
+		return -1;
+	}
 
-	datosRecibidos->datos = malloc(datos_long + 1);
-	memset(datosRecibidos->datos, '\0', datos_long + 1);
-	estado = recv(sockFS, datosRecibidos->datos, datos_long, 0);
-	if (!estado)return 0;
+	// creo mensaje y le asigno valores correspondientes
 
-	//Obtengo el codigo
-	uint8_t codigo_long;
-	tam_buffer = sizeof(uint8_t);
-	estado = recv(sockFS, buffer, sizeof(datosRecibidos->codigo_long), 0);
-	if (!estado)return 0;
+	t_mensaje mensaje;
+	mensaje.tipo = tipo_mensaje;
+	mensaje.id_proceso = id_origen;
+	memcpy(buffer,&mensaje,SIZE_MSG);
 
-	memcpy(&(codigo_long), buffer, tam_buffer);
-
-	uint16_t bufferNuevo;
-	estado = recv(sockFS, &bufferNuevo, codigo_long,0);
-	if (!estado)return 0;
-    datosRecibidos->codigo_operacion=bufferNuevo;
-
-	//Obtengo el numero del bloque
-
-    uint16_t bloque_long;
-    tam_buffer = sizeof(uint16_t);
-    estado = recv(sockFS, buffer, sizeof(datosRecibidos->numero_bloque_long),0);
-    if (!estado)return 0;
-
-
-    memcpy(&(bloque_long), buffer, tam_buffer);
-    estado = recv(sockFS, &(datosRecibidos->numero_bloque), bloque_long,0);
-    if (!estado)return 0;
-
+	// mando el handshake a destino
+	if((numbytes=send(sock,&mensaje,SIZE_MSG,0))<=0)
+	{
+		log_error(logger, "Error en el send de enviar_saludo");
+		return -1;
+	}
 
 	free(buffer);
-	return estado;
-
+	log_info(logger, "Se envio saludo");
+	return sock;
 }
 
+// Funcion recibe HANDSHAKE o HANDSHAKEOK dependiendo del tipo de mensaje especificado (#define)
+// Retorna int con valor -1 en caso de error y 0 en caso de exito
 
-int enviar_saludo(int id_origen, int fs_sock, t_log* logger,int tipo_mensaje){
+int recibir_saludo(int id_destino, int sock, t_log* logger,int tipo_mensaje)
+{
+	//pongo en 0 el buffer para recibir
+	char* buffer;
 
- 	uint8_t codIdentificacion;
- 			codIdentificacion = 30; //DATANODE se identifica con el nro 0 ->TODO PASARLO ARRIBA CON DEFINE
- 	//ME PRESENTO Y LE DIGO QUIEN SOY
+	//creo el buffer
+		if((buffer = (char*) malloc (sizeof(char) * MAXDATASIZE)) == NULL)
+		{
+			log_error(logger,"Error al reservar memoria para el buffer");
+			return -1;
+		}
 
- 			if(send(fs_sock,&(codIdentificacion),sizeof(uint8_t),0)==-1){
- 				sem_wait(&mutex_log);
- 				log_error(logger, "Error al identificarme con mi número=%i. (¡Revise código!)",codIdentificacion);
- 				sem_post(&mutex_log);
- 				return -1;
- 			}else{
- 			sem_wait(&mutex_log);
- 			log_info(logger, "Me identifique al FS... (Soy=%i)",codIdentificacion);
- 			sem_post(&mutex_log);} //Envio primero el Codigo de operacion para que YAMA pueda usar un Switch.
+	memset(buffer,'\0',MAXDATASIZE);
+	t_mensaje mensaje;
+	int numbytes;
 
- 	return 0;
- }
+	//recibo en el buffer
+	if((numbytes=recv(sock,buffer,SIZE_MSG,0))<=0 )
+	{
+		log_error(logger, "Error en el recv en el socket de recibir saludo");
+		close(sock);
+		return -1;
+	}
+
+
+	//copio la respuesta del buffer
+	memcpy(&mensaje,buffer,SIZE_MSG);
+
+
+	switch (mensaje.tipo)
+		{
+		case HANDSHAKEOK:
+			log_info(logger, "Conexion Lograda con FS");
+//	         free(buffer);  //Lo comento por que me esta generando *** Error in `./datanode': double free or corruption (top): 0x08846890 ***
+	                        //[1]    10618 abort (core dumped)  ./datanode
+		break;
+		case HANDSHAKE:
+			log_info(logger, "Recibi HANDSHAKE de FS");
+			log_info(logger, "Conexion Lograda con FS");
+			free(buffer);
+		break;
+		default:
+			log_error(logger, "Error en el tipo de mensaje enviado");
+			free(buffer);
+		break;
+		}
+
+		free(buffer);
+
+	return 0;
+}
 
 
 int main(int argc, char **argv) {

@@ -384,3 +384,78 @@
 [INFO] 15:46:27:11 YAMA LOG/(22381:27751): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
 [ERROR] 15:53:19:927 YAMA LOG/(22381:27751): Master 5 -> Se ha desconectado.
 [INFO] 15:53:19:928 YAMA LOG/(22381:27751): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 14:47:47:647 YAMA LOG/(2450:2450): <<Proceso YAMA iniciando>> (CARGANDO CONFIGURACIONES)
+[INFO] 14:47:47:702 YAMA LOG/(2450:2450): El puerto del File System es: 1234
+[INFO] 14:47:47:703 YAMA LOG/(2450:2450): El tiempo de retardo para la planificación definido es: 0 ms.
+[INFO] 14:47:47:703 YAMA LOG/(2450:2450): Definido el algoritmo de balanceo como: SIN-DEFINIR-ALGORITMO
+[INFO] 14:47:47:704 YAMA LOG/(2450:2455): YAMA levanto servidor y se encuentra esperando conexiones de Masters por el puerto 9262.
+[INFO] 14:47:47:704 YAMA LOG/(2450:2455): Esperando conexiones de clientes Master...
+[INFO] 14:47:54:479 YAMA LOG/(2450:2455): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 14:47:54:483 YAMA LOG/(2450:2466): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 14:47:54:483 YAMA LOG/(2450:2466): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 14:47:54:483 YAMA LOG/(2450:2466): Master 5 -> BytesRecibidos: 255 con: '' 
+[INFO] 14:47:54:484 YAMA LOG/(2450:2466): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 18:52:29:691 YAMA LOG/(2450:2455): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 18:52:29:694 YAMA LOG/(2450:5070): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 18:52:29:694 YAMA LOG/(2450:5070): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 18:52:29:694 YAMA LOG/(2450:5070): Master 5 -> BytesRecibidos: 255 con: '' 
+[INFO] 18:52:29:694 YAMA LOG/(2450:5070): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 18:52:46:400 YAMA LOG/(2450:2455): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 18:52:46:400 YAMA LOG/(2450:5087): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 18:52:46:400 YAMA LOG/(2450:5087): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 18:52:46:400 YAMA LOG/(2450:5087): Master 5 -> BytesRecibidos: 255 con: '' 
+[INFO] 18:52:46:400 YAMA LOG/(2450:5087): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 18:53:26:176 YAMA LOG/(5114:5114): <<Proceso YAMA iniciando>> (CARGANDO CONFIGURACIONES)
+[INFO] 18:53:26:177 YAMA LOG/(5114:5114): El puerto del File System es: 1234
+[INFO] 18:53:26:177 YAMA LOG/(5114:5114): El tiempo de retardo para la planificación definido es: 0 ms.
+[INFO] 18:53:26:177 YAMA LOG/(5114:5114): Definido el algoritmo de balanceo como: SIN-DEFINIR-ALGORITMO
+[INFO] 18:53:26:177 YAMA LOG/(5114:5118): YAMA levanto servidor y se encuentra esperando conexiones de Masters por el puerto 9262.
+[INFO] 18:53:26:177 YAMA LOG/(5114:5118): Esperando conexiones de clientes Master...
+[INFO] 18:53:32:686 YAMA LOG/(5114:5118): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 18:53:32:687 YAMA LOG/(5114:5128): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 18:53:32:687 YAMA LOG/(5114:5128): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 18:53:32:687 YAMA LOG/(5114:5128): Master 5 -> BytesRecibidos: 255 con: '' 
+[INFO] 18:53:32:687 YAMA LOG/(5114:5128): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 18:53:49:976 YAMA LOG/(5114:5118): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 18:53:49:979 YAMA LOG/(5114:5149): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 18:53:49:979 YAMA LOG/(5114:5149): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 18:53:49:979 YAMA LOG/(5114:5149): Master 5 -> BytesRecibidos: 255 con: '' 
+[INFO] 18:53:49:979 YAMA LOG/(5114:5149): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 18:55:46:886 YAMA LOG/(5184:5184): <<Proceso YAMA iniciando>> (CARGANDO CONFIGURACIONES)
+[INFO] 18:55:46:886 YAMA LOG/(5184:5184): El puerto del File System es: 1234
+[INFO] 18:55:46:886 YAMA LOG/(5184:5184): El tiempo de retardo para la planificación definido es: 0 ms.
+[INFO] 18:55:46:887 YAMA LOG/(5184:5184): Definido el algoritmo de balanceo como: SIN-DEFINIR-ALGORITMO
+[ERROR] 18:55:46:900 YAMA LOG/(5184:5189): Falló el bind. (¿Seguro que no hay dos instancias de YAMA corriendo? 
+[INFO] 18:56:27:27 YAMA LOG/(5236:5236): <<Proceso YAMA iniciando>> (CARGANDO CONFIGURACIONES)
+[INFO] 18:56:27:31 YAMA LOG/(5236:5236): El puerto del File System es: 1234
+[INFO] 18:56:27:32 YAMA LOG/(5236:5236): El tiempo de retardo para la planificación definido es: 0 ms.
+[INFO] 18:56:27:33 YAMA LOG/(5236:5236): Definido el algoritmo de balanceo como: SIN-DEFINIR-ALGORITMO
+[ERROR] 18:56:27:35 YAMA LOG/(5236:5240): Falló el bind. (¿Seguro que no hay dos instancias de YAMA corriendo? 
+[INFO] 18:59:16:693 YAMA LOG/(5314:5314): <<Proceso YAMA iniciando>> (CARGANDO CONFIGURACIONES)
+[INFO] 18:59:16:693 YAMA LOG/(5314:5314): El puerto del File System es: 1234
+[INFO] 18:59:16:694 YAMA LOG/(5314:5314): El tiempo de retardo para la planificación definido es: 0 ms.
+[INFO] 18:59:16:694 YAMA LOG/(5314:5314): Definido el algoritmo de balanceo como: SIN-DEFINIR-ALGORITMO
+[INFO] 18:59:16:697 YAMA LOG/(5314:5317): YAMA levanto servidor y se encuentra esperando conexiones de Masters por el puerto 9262.
+[INFO] 18:59:16:697 YAMA LOG/(5314:5317): Esperando conexiones de clientes Master...
+[INFO] 19:20:30:798 YAMA LOG/(5314:5317): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 19:20:30:798 YAMA LOG/(5314:6168): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 19:20:30:798 YAMA LOG/(5314:6168): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 19:20:30:798 YAMA LOG/(5314:6168): Master 5 -> BytesRecibidos: 255 con: '' 
+[INFO] 19:20:30:798 YAMA LOG/(5314:6168): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 19:20:58:485 YAMA LOG/(6179:6179): <<Proceso YAMA iniciando>> (CARGANDO CONFIGURACIONES)
+[INFO] 19:20:58:485 YAMA LOG/(6179:6179): El puerto del File System es: 1234
+[INFO] 19:20:58:485 YAMA LOG/(6179:6179): El tiempo de retardo para la planificación definido es: 0 ms.
+[INFO] 19:20:58:485 YAMA LOG/(6179:6179): Definido el algoritmo de balanceo como: SIN-DEFINIR-ALGORITMO
+[INFO] 19:20:58:486 YAMA LOG/(6179:6182): YAMA levanto servidor y se encuentra esperando conexiones de Masters por el puerto 9262.
+[INFO] 19:20:58:486 YAMA LOG/(6179:6182): Esperando conexiones de clientes Master...
+[INFO] 19:21:07:592 YAMA LOG/(6179:6182): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 19:21:07:595 YAMA LOG/(6179:6208): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 19:21:07:595 YAMA LOG/(6179:6208): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 19:21:07:595 YAMA LOG/(6179:6208): Master 5 -> BytesRecibidos: 255 con: '' 
+[INFO] 19:21:07:595 YAMA LOG/(6179:6208): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 19:23:10:832 YAMA LOG/(6275:6275): <<Proceso YAMA iniciando>> (CARGANDO CONFIGURACIONES)
+[INFO] 19:23:10:833 YAMA LOG/(6275:6275): El puerto del File System es: 1234
+[INFO] 19:23:10:833 YAMA LOG/(6275:6275): El tiempo de retardo para la planificación definido es: 0 ms.
+[INFO] 19:23:10:833 YAMA LOG/(6275:6275): Definido el algoritmo de balanceo como: SIN-DEFINIR-ALGORITMO
+[INFO] 19:23:10:834 YAMA LOG/(6275:6278): YAMA levanto servidor y se encuentra esperando conexiones de Masters por el puerto 9262.
+[INFO] 19:23:10:834 YAMA LOG/(6275:6278): Esperando conexiones de clientes Master...
