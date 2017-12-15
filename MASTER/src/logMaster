@@ -1,0 +1,52 @@
+[INFO] 14:55:53:10 MASTER LOG/(20497:20497): <<Proceso Master iniciando>> (CARGANDO CONFIGURACIONES)
+[INFO] 14:55:53:10 MASTER LOG/(20497:20497): Configuración cargada.
+[ERROR] 14:55:53:10 MASTER LOG/(20497:20497): Error al obtener la IP de YAMA
+[ERROR] 14:55:53:10 MASTER LOG/(20497:20497): Error al obtener el puerto de YAMA
+[ERROR] 14:55:53:10 MASTER LOG/(20497:20497): Debido a errores en las configuraciones, se aborta la ejecución... (REVISE ARCH. CONFIGURACIONES)
+[INFO] 14:58:11:48 MASTER LOG/(20524:20524): <<Proceso Master iniciando>> (CARGANDO CONFIGURACIONES)
+[INFO] 14:58:11:48 MASTER LOG/(20524:20524): Se genera archivo de configuración si este no existe.
+[INFO] 14:58:11:48 MASTER LOG/(20524:20524): La IP de YAMA es: 127.0.0.1
+[INFO] 14:58:11:48 MASTER LOG/(20524:20524): El puerto de YAMA es: 2000
+[ERROR] 14:58:11:48 MASTER LOG/(20524:20524): Cantidad de argumentos recibidos incorrectos, se aborta la ejecución. (Se esperan 4 se recibieron 1)
+[INFO] 15:10:14:212 MASTER LOG/(21025:21025): <<Proceso Master iniciando>> (CARGANDO CONFIGURACIONES)
+[INFO] 15:10:14:212 MASTER LOG/(21025:21025): Se genera archivo de configuración si este no existe.
+[INFO] 15:10:14:212 MASTER LOG/(21025:21025): La IP de YAMA es: 127.0.0.1
+[INFO] 15:10:14:212 MASTER LOG/(21025:21025): El puerto de YAMA es: 2000
+[ERROR] 15:10:14:212 MASTER LOG/(21025:21025): Cantidad de argumentos recibidos incorrectos, se aborta la ejecución. (Se esperan 4 se recibieron 4)
+[INFO] 15:10:36:310 MASTER LOG/(21037:21037): <<Proceso Master iniciando>> (CARGANDO CONFIGURACIONES)
+[INFO] 15:10:36:311 MASTER LOG/(21037:21037): Se genera archivo de configuración si este no existe.
+[INFO] 15:10:36:311 MASTER LOG/(21037:21037): La IP de YAMA es: 127.0.0.1
+[INFO] 15:10:36:311 MASTER LOG/(21037:21037): El puerto de YAMA es: 2000
+[DEBUG] 15:10:36:311 MASTER LOG/(21037:21037): Datos ingresados por parametros son: ScriptTransformador= "a" ScriptReductor= "a" ArchivoOriginalDeYAMAFS= "a" ArchivoDestinoEnYAMAFS= "a" 
+[INFO] 15:10:36:311 MASTER LOG/(21037:21037): <<Proceso Master Finalizado>>
+[INFO] 16:04:39:584 MASTER LOG/(4357:4357): <<Proceso Master iniciando>> (CARGANDO CONFIGURACIONES)
+[INFO] 16:04:39:585 MASTER LOG/(4357:4357): La IP de YAMA es: 127.0.0.1, su puerto: 2000
+[ERROR] 16:04:39:585 MASTER LOG/(4357:4357): Cantidad de argumentos recibidos incorrectos, se aborta la ejecución. (Se esperan 4 se recibieron 0)
+[INFO] 16:04:47:213 MASTER LOG/(4358:4358): <<Proceso Master iniciando>> (CARGANDO CONFIGURACIONES)
+[INFO] 16:04:47:215 MASTER LOG/(4358:4358): La IP de YAMA es: 127.0.0.1, su puerto: 2000
+[DEBUG] 16:04:47:215 MASTER LOG/(4358:4358): Datos ingresados por parametros son: ScriptTransformador= "1" ScriptReductor= "2" ArchivoOriginalDeYAMAFS= "3" ArchivoDestinoEnYAMAFS= "4" 
+[INFO] 16:04:47:215 MASTER LOG/(4358:4358): Intentando levantar conexión con YAMA.
+[ERROR] 16:04:47:216 MASTER LOG/(4358:4358): Problema al levantar conexión con YAMA en IP:127.0.0.1 PUERTO:2000 (¿YAMA se encuentra levantado?)
+[ERROR] 16:04:47:216 MASTER LOG/(4358:4358): Fallo al intentar conectar a YAMA, aborta ejecución.
+[INFO] 16:06:23:51 MASTER LOG/(4494:4494): <<Proceso Master iniciando>> (CARGANDO CONFIGURACIONES)
+[INFO] 16:06:23:52 MASTER LOG/(4494:4494): La IP de YAMA es: 127.0.0.1, su puerto: 2000
+[DEBUG] 16:06:23:53 MASTER LOG/(4494:4494): Datos ingresados por parametros son: ScriptTransformador= "1" ScriptReductor= "2" ArchivoOriginalDeYAMAFS= "3" ArchivoDestinoEnYAMAFS= "4" 
+[INFO] 16:06:23:53 MASTER LOG/(4494:4494): Intentando levantar conexión con YAMA.
+[ERROR] 16:06:23:53 MASTER LOG/(4494:4494): Problema al levantar conexión con YAMA en IP:127.0.0.1 PUERTO:2000 (¿YAMA se encuentra levantado?)
+[ERROR] 16:06:23:53 MASTER LOG/(4494:4494): Fallo al intentar conectar a YAMA, aborta ejecución.
+[INFO] 16:06:25:300 MASTER LOG/(4495:4495): <<Proceso Master iniciando>> (CARGANDO CONFIGURACIONES)
+[INFO] 16:06:25:301 MASTER LOG/(4495:4495): La IP de YAMA es: 127.0.0.1, su puerto: 2000
+[DEBUG] 16:06:25:301 MASTER LOG/(4495:4495): Datos ingresados por parametros son: ScriptTransformador= "1" ScriptReductor= "2" ArchivoOriginalDeYAMAFS= "3" ArchivoDestinoEnYAMAFS= "4" 
+[INFO] 16:06:25:301 MASTER LOG/(4495:4495): Intentando levantar conexión con YAMA.
+[ERROR] 16:06:25:302 MASTER LOG/(4495:4495): Problema al levantar conexión con YAMA en IP:127.0.0.1 PUERTO:2000 (¿YAMA se encuentra levantado?)
+[ERROR] 16:06:25:302 MASTER LOG/(4495:4495): Fallo al intentar conectar a YAMA, aborta ejecución.
+[INFO] 16:07:34:698 MASTER LOG/(4537:4537): <<Proceso Master iniciando>> (CARGANDO CONFIGURACIONES)
+[INFO] 16:07:34:699 MASTER LOG/(4537:4537): La IP de YAMA es: 127.0.0.1, su puerto: 9262
+[DEBUG] 16:07:34:699 MASTER LOG/(4537:4537): Datos ingresados por parametros son: ScriptTransformador= "1" ScriptReductor= "2" ArchivoOriginalDeYAMAFS= "3" ArchivoDestinoEnYAMAFS= "4" 
+[INFO] 16:07:34:699 MASTER LOG/(4537:4537): Intentando levantar conexión con YAMA.
+[INFO] 16:07:34:700 MASTER LOG/(4537:4537): Conexión establecida con YAMA.
+[INFO] 16:07:35:506 MASTER LOG/(4539:4539): <<Proceso Master iniciando>> (CARGANDO CONFIGURACIONES)
+[INFO] 16:07:35:508 MASTER LOG/(4539:4539): La IP de YAMA es: 127.0.0.1, su puerto: 9262
+[DEBUG] 16:07:35:508 MASTER LOG/(4539:4539): Datos ingresados por parametros son: ScriptTransformador= "1" ScriptReductor= "2" ArchivoOriginalDeYAMAFS= "3" ArchivoDestinoEnYAMAFS= "4" 
+[INFO] 16:07:35:508 MASTER LOG/(4539:4539): Intentando levantar conexión con YAMA.
+[INFO] 16:07:35:509 MASTER LOG/(4539:4539): Conexión establecida con YAMA.

@@ -1,0 +1,171 @@
+[INFO] 22:06:07:386 DataNode LOG/(4213:4213): <<Proceso DataNode inició>>
+[INFO] 22:06:07:428 DataNode LOG/(4213:4213): Intentando levantar el archivo de configuraciones.
+[ERROR] 22:06:07:428 DataNode LOG/(4213:4213): Error el archivo de configuraciones no existe.
+[INFO] 22:09:46:744 DataNode LOG/(4349:4349): <<Proceso DataNode inició>>
+[INFO] 22:09:46:745 DataNode LOG/(4349:4349): Intentando levantar el archivo de configuraciones.
+[ERROR] 22:09:46:745 DataNode LOG/(4349:4349): Error el archivo de configuraciones no existe.
+[INFO] 22:10:11:994 DataNode LOG/(4379:4379): <<Proceso DataNode inició>>
+[INFO] 22:10:11:994 DataNode LOG/(4379:4379): Intentando levantar el archivo de configuraciones.
+[ERROR] 22:10:11:994 DataNode LOG/(4379:4379): Error el archivo de configuraciones no existe.
+[INFO] 22:10:42:808 DataNode LOG/(4411:4411): <<Proceso DataNode inició>>
+[INFO] 22:10:42:808 DataNode LOG/(4411:4411): Intentando levantar el archivo de configuraciones.
+[ERROR] 22:10:42:808 DataNode LOG/(4411:4411): Error el archivo de configuraciones no existe.
+[INFO] 22:10:57:904 DataNode LOG/(4439:4439): <<Proceso DataNode inició>>
+[INFO] 22:10:57:904 DataNode LOG/(4439:4439): Intentando levantar el archivo de configuraciones.
+[ERROR] 22:10:57:904 DataNode LOG/(4439:4439): Error el archivo de configuraciones no existe.
+[INFO] 22:11:34:204 DataNode LOG/(4457:4457): <<Proceso DataNode inició>>
+[INFO] 22:11:34:205 DataNode LOG/(4457:4457): Intentando levantar el archivo de configuraciones.
+[INFO] 22:11:34:205 DataNode LOG/(4457:4457): La IP del FileSystem es: 192.168.1.254
+[INFO] 22:11:34:205 DataNode LOG/(4457:4457): El puerto del FileSystem es: 5040
+[INFO] 22:11:34:205 DataNode LOG/(4457:4457): El nombre del Nodo es: NODO1
+[INFO] 22:11:34:205 DataNode LOG/(4457:4457): La ruta del Data.Bin es: /home/utnso/data.bin
+[INFO] 22:11:34:205 DataNode LOG/(4457:4457): Intentando levantar conexión con File System.
+[ERROR] 22:13:41:448 DataNode LOG/(4457:4457): Problema al levantar conexión con FileSystem en IP:192.168.1.254 PUERTO:5040 (¿File System se encuentra levantado?)
+[INFO] 22:13:41:448 DataNode LOG/(4457:4457): <<Proceso DataNode finalizó>>
+[INFO] 22:15:06:821 DataNode LOG/(4643:4643): <<Proceso DataNode inició>>
+[INFO] 22:15:06:821 DataNode LOG/(4643:4643): Intentando levantar el archivo de configuraciones.
+[INFO] 22:15:06:821 DataNode LOG/(4643:4643): La IP del FileSystem es: 192.168.1.254
+[INFO] 22:15:06:821 DataNode LOG/(4643:4643): El puerto del FileSystem es: 5040
+[INFO] 22:15:06:821 DataNode LOG/(4643:4643): El nombre del Nodo es: NODO1
+[INFO] 22:15:06:821 DataNode LOG/(4643:4643): La ruta del Data.Bin es: /home/utnso/data.bin
+[INFO] 22:15:06:821 DataNode LOG/(4643:4643): Intentando levantar conexión con File System.
+[ERROR] 22:17:14:55 DataNode LOG/(4643:4643): Problema al levantar conexión con FileSystem en IP:192.168.1.254 PUERTO:5040 (¿File System se encuentra levantado?)
+[INFO] 22:17:14:55 DataNode LOG/(4643:4643): <<Proceso DataNode finalizó>>
+[INFO] 22:18:22:206 DataNode LOG/(4678:4678): <<Proceso DataNode inició>>
+[INFO] 22:18:22:206 DataNode LOG/(4678:4678): Intentando levantar el archivo de configuraciones.
+[INFO] 22:18:22:206 DataNode LOG/(4678:4678): La IP del FileSystem es: 192.168.1.254
+[INFO] 22:18:22:206 DataNode LOG/(4678:4678): El puerto del FileSystem es: 5040
+[INFO] 22:18:22:206 DataNode LOG/(4678:4678): El nombre del Nodo es: NODO1
+[INFO] 22:18:22:206 DataNode LOG/(4678:4678): La ruta del Data.Bin es: /home/utnso/data.bin
+[INFO] 22:18:22:206 DataNode LOG/(4678:4678): Intentando levantar conexión con File System.
+[ERROR] 22:20:29:511 DataNode LOG/(4678:4678): Problema al levantar conexión con FileSystem en IP:192.168.1.254 PUERTO:5040 (¿File System se encuentra levantado?)
+[INFO] 22:20:29:511 DataNode LOG/(4678:4678): <<Proceso DataNode finalizó>>
+[INFO] 22:23:15:620 DataNode LOG/(4789:4789): <<Proceso DataNode inició>>
+[INFO] 22:23:15:620 DataNode LOG/(4789:4789): Intentando levantar el archivo de configuraciones.
+[INFO] 22:23:15:620 DataNode LOG/(4789:4789): La IP del FileSystem es: 192.168.1.254
+[INFO] 22:23:15:620 DataNode LOG/(4789:4789): El puerto del FileSystem es: 5040
+[INFO] 22:23:15:620 DataNode LOG/(4789:4789): El nombre del Nodo es: NODO1
+[INFO] 22:23:15:620 DataNode LOG/(4789:4789): La ruta del Data.Bin es: /home/utnso/data.bin
+[INFO] 22:23:15:620 DataNode LOG/(4789:4789): Intentando levantar conexión con File System.
+[ERROR] 22:25:22:887 DataNode LOG/(4789:4789): Problema al levantar conexión con FileSystem en IP:192.168.1.254 PUERTO:5040 (¿File System se encuentra levantado?)
+[INFO] 22:25:22:887 DataNode LOG/(4789:4789): <<Proceso DataNode finalizó>>
+[INFO] 22:35:25:507 DataNode LOG/(4933:4933): <<Proceso DataNode inició>>
+[INFO] 22:35:25:507 DataNode LOG/(4933:4933): Intentando levantar el archivo de configuraciones.
+[INFO] 22:35:25:507 DataNode LOG/(4933:4933): La IP del FileSystem es: 192.168.1.254
+[INFO] 22:35:25:507 DataNode LOG/(4933:4933): El puerto del FileSystem es: 5040
+[INFO] 22:35:25:507 DataNode LOG/(4933:4933): El nombre del Nodo es: NODO1
+[INFO] 22:35:25:507 DataNode LOG/(4933:4933): La ruta del Data.Bin es: /home/utnso/data.bin
+[INFO] 22:35:25:507 DataNode LOG/(4933:4933): Intentando levantar conexión con File System.
+[ERROR] 22:37:32:743 DataNode LOG/(4933:4933): Problema al levantar conexión con FileSystem en IP:192.168.1.254 PUERTO:5040 (¿File System se encuentra levantado?)
+[INFO] 22:37:32:743 DataNode LOG/(4933:4933): <<Proceso DataNode finalizó>>
+[INFO] 22:41:03:634 DataNode LOG/(5253:5253): <<Proceso DataNode inició>>
+[INFO] 22:41:03:634 DataNode LOG/(5253:5253): Intentando levantar el archivo de configuraciones.
+[INFO] 22:41:03:634 DataNode LOG/(5253:5253): La IP del FileSystem es: 192.168.1.254
+[INFO] 22:41:03:634 DataNode LOG/(5253:5253): El puerto del FileSystem es: 5040
+[INFO] 22:41:03:634 DataNode LOG/(5253:5253): El nombre del Nodo es: NODO1
+[INFO] 22:41:03:634 DataNode LOG/(5253:5253): La ruta del Data.Bin es: /home/utnso/data.bin
+[INFO] 22:41:03:634 DataNode LOG/(5253:5253): Intentando levantar conexión con File System.
+[ERROR] 22:43:10:920 DataNode LOG/(5253:5253): Problema al levantar conexión con FileSystem en IP:192.168.1.254 PUERTO:5040 (¿File System se encuentra levantado?)
+[INFO] 22:43:10:920 DataNode LOG/(5253:5253): <<Proceso DataNode finalizó>>
+[INFO] 22:46:06:782 DataNode LOG/(5282:5282): <<Proceso DataNode inició>>
+[INFO] 22:46:06:782 DataNode LOG/(5282:5282): Intentando levantar el archivo de configuraciones.
+[INFO] 22:46:06:782 DataNode LOG/(5282:5282): La IP del FileSystem es: 192.168.1.254
+[INFO] 22:46:06:782 DataNode LOG/(5282:5282): El puerto del FileSystem es: 5040
+[INFO] 22:46:06:782 DataNode LOG/(5282:5282): El nombre del Nodo es: NODO1
+[INFO] 22:46:06:782 DataNode LOG/(5282:5282): La ruta del Data.Bin es: /home/utnso/data.bin
+[INFO] 22:46:06:782 DataNode LOG/(5282:5282): Intentando levantar conexión con File System.
+[ERROR] 22:48:14:23 DataNode LOG/(5282:5282): Problema al levantar conexión con FileSystem en IP:192.168.1.254 PUERTO:5040 (¿File System se encuentra levantado?)
+[INFO] 22:48:14:23 DataNode LOG/(5282:5282): <<Proceso DataNode finalizó>>
+[INFO] 22:58:24:335 DataNode LOG/(5435:5435): <<Proceso DataNode inició>>
+[INFO] 22:58:24:335 DataNode LOG/(5435:5435): Intentando levantar el archivo de configuraciones.
+[INFO] 22:58:24:335 DataNode LOG/(5435:5435): La IP del FileSystem es: 192.168.1.254
+[INFO] 22:58:24:335 DataNode LOG/(5435:5435): El puerto del FileSystem es: 5040
+[INFO] 22:58:24:335 DataNode LOG/(5435:5435): El nombre del Nodo es: NODO1
+[INFO] 22:58:24:335 DataNode LOG/(5435:5435): La ruta del Data.Bin es: /home/utnso/data.bin
+[INFO] 22:58:24:335 DataNode LOG/(5435:5435): Intentando levantar conexión con File System.
+[ERROR] 23:00:31:559 DataNode LOG/(5435:5435): Problema al levantar conexión con FileSystem en IP:192.168.1.254 PUERTO:5040 (¿File System se encuentra levantado?)
+[INFO] 23:00:31:559 DataNode LOG/(5435:5435): <<Proceso DataNode finalizó>>
+[INFO] 23:01:16:16 DataNode LOG/(5481:5481): <<Proceso DataNode inició>>
+[INFO] 23:01:16:16 DataNode LOG/(5481:5481): Intentando levantar el archivo de configuraciones.
+[INFO] 23:01:16:16 DataNode LOG/(5481:5481): La IP del FileSystem es: 192.168.1.254
+[INFO] 23:01:16:16 DataNode LOG/(5481:5481): El puerto del FileSystem es: 1234
+[INFO] 23:01:16:16 DataNode LOG/(5481:5481): El nombre del Nodo es: NODO1
+[INFO] 23:01:16:16 DataNode LOG/(5481:5481): La ruta del Data.Bin es: /home/utnso/data.bin
+[INFO] 23:01:16:16 DataNode LOG/(5481:5481): Intentando levantar conexión con File System.
+[INFO] 23:01:47:734 DataNode LOG/(5548:5548): <<Proceso DataNode inició>>
+[INFO] 23:01:47:734 DataNode LOG/(5548:5548): Intentando levantar el archivo de configuraciones.
+[INFO] 23:01:47:734 DataNode LOG/(5548:5548): La IP del FileSystem es: 192.168.1.254
+[INFO] 23:01:47:734 DataNode LOG/(5548:5548): El puerto del FileSystem es: 1234
+[INFO] 23:01:47:734 DataNode LOG/(5548:5548): El nombre del Nodo es: NODO1
+[INFO] 23:01:47:734 DataNode LOG/(5548:5548): La ruta del Data.Bin es: /home/utnso/data.bin
+[INFO] 23:01:47:734 DataNode LOG/(5548:5548): Intentando levantar conexión con File System.
+[ERROR] 23:03:54:951 DataNode LOG/(5548:5548): Problema al levantar conexión con FileSystem en IP:192.168.1.254 PUERTO:1234 (¿File System se encuentra levantado?)
+[ERROR] 23:03:54:951 DataNode LOG/(5548:5548): Fallo al intentar conectar a FileSystem, aborta ejecución.
+[INFO] 23:05:12:370 DataNode LOG/(5585:5585): <<Proceso DataNode inició>>
+[INFO] 23:05:12:370 DataNode LOG/(5585:5585): Intentando levantar el archivo de configuraciones.
+[INFO] 23:05:12:370 DataNode LOG/(5585:5585): La IP del FileSystem es: 127.0.0.1
+[INFO] 23:05:12:370 DataNode LOG/(5585:5585): El puerto del FileSystem es: 1234
+[INFO] 23:05:12:370 DataNode LOG/(5585:5585): El nombre del Nodo es: NODO1
+[INFO] 23:05:12:370 DataNode LOG/(5585:5585): La ruta del Data.Bin es: /home/utnso/data.bin
+[INFO] 23:05:12:370 DataNode LOG/(5585:5585): Intentando levantar conexión con File System.
+[INFO] 23:05:12:370 DataNode LOG/(5585:5585): <<Proceso DataNode finalizó>>
+[INFO] 23:11:29:637 DataNode LOG/(5691:5691): <<Proceso DataNode inició>>
+[INFO] 23:11:29:637 DataNode LOG/(5691:5691): Intentando levantar el archivo de configuraciones.
+[INFO] 23:11:29:637 DataNode LOG/(5691:5691): La IP del FileSystem es: 127.0.0.1
+[INFO] 23:11:29:637 DataNode LOG/(5691:5691): El puerto del FileSystem es: 1234
+[INFO] 23:11:29:638 DataNode LOG/(5691:5691): El nombre del Nodo es: NODO1
+[INFO] 23:11:29:638 DataNode LOG/(5691:5691): La ruta del Data.Bin es: /home/utnso/data.bin
+[INFO] 23:11:29:638 DataNode LOG/(5691:5691): Intentando levantar conexión con File System.
+[INFO] 23:12:10:784 DataNode LOG/(5725:5725): <<Proceso DataNode inició>>
+[INFO] 23:12:10:784 DataNode LOG/(5725:5725): Intentando levantar el archivo de configuraciones.
+[INFO] 23:12:10:784 DataNode LOG/(5725:5725): La IP del FileSystem es: 127.0.0.1
+[INFO] 23:12:10:784 DataNode LOG/(5725:5725): El puerto del FileSystem es: 1234
+[INFO] 23:12:10:784 DataNode LOG/(5725:5725): El nombre del Nodo es: NODO1
+[INFO] 23:12:10:784 DataNode LOG/(5725:5725): La ruta del Data.Bin es: /home/utnso/data.bin
+[INFO] 23:12:10:784 DataNode LOG/(5725:5725): Intentando levantar conexión con File System.
+[INFO] 01:14:22:666 DataNode LOG/(7601:7601): <<Proceso DataNode inició>>
+[INFO] 01:14:22:666 DataNode LOG/(7601:7601): Intentando levantar el archivo de configuraciones.
+[INFO] 01:14:22:666 DataNode LOG/(7601:7601): La IP del FileSystem es: 127.0.0.1
+[INFO] 01:14:22:666 DataNode LOG/(7601:7601): El puerto del FileSystem es: 1234
+[INFO] 01:14:22:666 DataNode LOG/(7601:7601): El nombre del Nodo es: NODO1
+[INFO] 01:14:22:666 DataNode LOG/(7601:7601): La ruta del Data.Bin es: /home/utnso/data.bin
+[INFO] 01:14:22:666 DataNode LOG/(7601:7601): Intentando levantar conexión con File System.
+[ERROR] 01:14:22:693 DataNode LOG/(7601:7601): Error en el send de enviar_saludo
+[ERROR] 01:14:22:693 DataNode LOG/(7601:7601): Error en el recv en el socket de recibir saludo
+[INFO] 01:14:22:693 DataNode LOG/(7601:7601): Se establecio conexion con Filesystem
+[INFO] 01:14:22:693 DataNode LOG/(7601:7601): <<Proceso DataNode finalizó>>
+[INFO] 01:35:49:709 DataNode LOG/(8113:8113): <<Proceso DataNode inició>>
+[INFO] 01:35:49:709 DataNode LOG/(8113:8113): Intentando levantar el archivo de configuraciones.
+[INFO] 01:35:49:709 DataNode LOG/(8113:8113): La IP del FileSystem es: 127.0.0.1
+[INFO] 01:35:49:709 DataNode LOG/(8113:8113): El puerto del FileSystem es: 1234
+[INFO] 01:35:49:709 DataNode LOG/(8113:8113): El nombre del Nodo es: NODO1
+[INFO] 01:35:49:709 DataNode LOG/(8113:8113): La ruta del Data.Bin es: /home/utnso/data.bin
+[INFO] 01:35:49:709 DataNode LOG/(8113:8113): Intentando levantar conexión con File System.
+[INFO] 01:35:49:709 DataNode LOG/(8113:8113): <<Proceso DataNode finalizó>>
+[INFO] 01:39:31:963 DataNode LOG/(8202:8202): <<Proceso DataNode inició>>
+[INFO] 01:39:31:963 DataNode LOG/(8202:8202): Intentando levantar el archivo de configuraciones.
+[INFO] 01:39:31:963 DataNode LOG/(8202:8202): La IP del FileSystem es: 127.0.0.1
+[INFO] 01:39:31:963 DataNode LOG/(8202:8202): El puerto del FileSystem es: 1234
+[INFO] 01:39:31:963 DataNode LOG/(8202:8202): El nombre del Nodo es: NODO1
+[INFO] 01:39:31:963 DataNode LOG/(8202:8202): La ruta del Data.Bin es: /home/utnso/data.bin
+[INFO] 01:39:31:963 DataNode LOG/(8202:8202): <<Proceso DataNode finalizó>>
+[INFO] 01:42:24:157 DataNode LOG/(8349:8349): <<Proceso DataNode inició>>
+[INFO] 01:42:24:157 DataNode LOG/(8349:8349): Intentando levantar el archivo de configuraciones.
+[INFO] 01:42:24:157 DataNode LOG/(8349:8349): La IP del FileSystem es: 127.0.0.1
+[INFO] 01:42:24:157 DataNode LOG/(8349:8349): El puerto del FileSystem es: 1234
+[INFO] 01:42:24:157 DataNode LOG/(8349:8349): El nombre del Nodo es: NODO1
+[INFO] 01:42:24:157 DataNode LOG/(8349:8349): La ruta del Data.Bin es: /home/utnso/data.bin
+[INFO] 01:42:24:157 DataNode LOG/(8349:8349): Intentando levantar conexión con File System.
+[ERROR] 01:42:24:157 DataNode LOG/(8349:8349): Error en el send de enviar_saludo
+[ERROR] 01:42:24:157 DataNode LOG/(8349:8349): Error en el recv en el socket de recibir saludo
+[INFO] 01:42:24:157 DataNode LOG/(8349:8349): <<Proceso DataNode finalizó>>
+[INFO] 10:00:50:665 DataNode LOG/(8493:8493): <<Proceso DataNode inició>>
+[INFO] 10:00:50:665 DataNode LOG/(8493:8493): Intentando levantar el archivo de configuraciones.
+[INFO] 10:00:50:665 DataNode LOG/(8493:8493): La IP del FileSystem es: 127.0.0.1
+[INFO] 10:00:50:665 DataNode LOG/(8493:8493): El puerto del FileSystem es: 1234
+[INFO] 10:00:50:665 DataNode LOG/(8493:8493): El nombre del Nodo es: NODO1
+[INFO] 10:00:50:665 DataNode LOG/(8493:8493): La ruta del Data.Bin es: /home/utnso/data.bin
+[INFO] 10:00:50:665 DataNode LOG/(8493:8493): Intentando levantar conexión con File System.
+[ERROR] 10:00:50:666 DataNode LOG/(8493:8493): Error en el send de enviar_saludo
+[ERROR] 10:00:50:666 DataNode LOG/(8493:8493): Error en el recv en el socket de recibir saludo
+[INFO] 10:00:50:666 DataNode LOG/(8493:8493): <<Proceso DataNode finalizó>>

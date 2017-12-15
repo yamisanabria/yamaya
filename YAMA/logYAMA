@@ -1,0 +1,386 @@
+[INFO] 12:49:01:485 YAMA LOG/(22381:22381): <<Proceso YAMA iniciando>> (CARGANDO CONFIGURACIONES)
+[INFO] 12:49:01:498 YAMA LOG/(22381:22381): El puerto del File System es: 1234
+[INFO] 12:49:01:499 YAMA LOG/(22381:22381): El tiempo de retardo para la planificación definido es: 0 ms.
+[INFO] 12:49:01:499 YAMA LOG/(22381:22381): Definido el algoritmo de balanceo como: SIN-DEFINIR-ALGORITMO
+[INFO] 12:49:01:506 YAMA LOG/(22381:22386): YAMA levanto servidor y se encuentra esperando conexiones de Masters por el puerto 9262.
+[INFO] 12:49:01:511 YAMA LOG/(22381:22386): Esperando conexiones de clientes Master...
+[INFO] 12:49:15:954 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 12:49:15:958 YAMA LOG/(22381:22421): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 12:49:15:964 YAMA LOG/(22381:22421): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 12:49:16:779 YAMA LOG/(22381:22421): Master 5 -> Se ha desconectado.
+[INFO] 12:49:16:780 YAMA LOG/(22381:22421): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 12:51:10:379 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 12:51:10:382 YAMA LOG/(22381:22490): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 12:51:10:386 YAMA LOG/(22381:22490): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 12:51:11:95 YAMA LOG/(22381:22490): Master 5 -> Se ha desconectado.
+[INFO] 12:51:11:96 YAMA LOG/(22381:22490): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 12:51:54:744 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 12:51:54:756 YAMA LOG/(22381:22549): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 12:51:54:758 YAMA LOG/(22381:22549): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 12:51:55:376 YAMA LOG/(22381:22549): Master 5 -> Se ha desconectado.
+[INFO] 12:51:55:378 YAMA LOG/(22381:22549): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 12:53:27:848 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 12:53:27:852 YAMA LOG/(22381:22626): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 12:53:27:852 YAMA LOG/(22381:22626): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 12:54:05:959 YAMA LOG/(22381:22626): Master 5 -> Se ha desconectado.
+[INFO] 12:54:05:959 YAMA LOG/(22381:22626): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 12:54:09:499 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 12:54:09:503 YAMA LOG/(22381:22662): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 12:54:09:504 YAMA LOG/(22381:22662): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 12:54:19:311 YAMA LOG/(22381:22662): Master 5 -> Se ha desconectado.
+[INFO] 12:54:19:312 YAMA LOG/(22381:22662): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 12:57:14:962 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 12:57:14:965 YAMA LOG/(22381:22703): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 12:57:14:966 YAMA LOG/(22381:22703): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 12:58:04:964 YAMA LOG/(22381:22703): Master 5 -> BytesRecibidos: 512 con: 'yamafs:/datos.csv' 
+[INFO] 12:58:04:965 YAMA LOG/(22381:22703): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 12:58:16:925 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 12:58:16:931 YAMA LOG/(22381:22775): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 12:58:16:931 YAMA LOG/(22381:22775): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 12:58:22:458 YAMA LOG/(22381:22775): Master 5 -> Se ha desconectado.
+[INFO] 12:58:22:458 YAMA LOG/(22381:22775): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 12:58:22:459 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 12:58:22:465 YAMA LOG/(22381:22789): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 12:58:22:466 YAMA LOG/(22381:22789): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 12:59:07:590 YAMA LOG/(22381:22789): Master 5 -> BytesRecibidos: 512 con: 'yamafs:/datos.csv' 
+[INFO] 12:59:07:590 YAMA LOG/(22381:22789): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 13:00:00:463 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 13:00:00:468 YAMA LOG/(22381:22827): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 13:00:00:472 YAMA LOG/(22381:22827): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 13:00:00:474 YAMA LOG/(22381:22827): Master 5 -> BytesRecibidos: 512 con: 'yamafs:/datos.csv' 
+[INFO] 13:00:00:480 YAMA LOG/(22381:22827): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 13:00:55:980 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 13:00:55:991 YAMA LOG/(22381:22861): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 13:00:55:991 YAMA LOG/(22381:22861): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 13:00:55:992 YAMA LOG/(22381:22861): Master 5 -> BytesRecibidos: 512 con: 'yamafs:/datos.csv' 
+[INFO] 13:00:55:993 YAMA LOG/(22381:22861): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 13:01:22:857 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 13:01:22:864 YAMA LOG/(22381:22894): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 13:01:22:871 YAMA LOG/(22381:22894): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 13:01:22:880 YAMA LOG/(22381:22894): Master 5 -> BytesRecibidos: 512 con: 'yamafs:/datos.csv' 
+[INFO] 13:01:22:881 YAMA LOG/(22381:22894): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 13:02:13:765 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 13:02:13:771 YAMA LOG/(22381:22940): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 13:02:13:771 YAMA LOG/(22381:22940): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 13:02:13:772 YAMA LOG/(22381:22940): Master 5 -> BytesRecibidos: 512 con: 'yamafs:/datos.csv' 
+[INFO] 13:02:13:772 YAMA LOG/(22381:22940): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 13:02:48:401 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 13:02:48:407 YAMA LOG/(22381:22972): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 13:02:48:408 YAMA LOG/(22381:22972): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 13:02:48:409 YAMA LOG/(22381:22972): Master 5 -> BytesRecibidos: 512 con: 'yamafs:/datos.csv' 
+[INFO] 13:02:48:409 YAMA LOG/(22381:22972): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 13:07:44:490 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 13:07:44:491 YAMA LOG/(22381:23042): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 13:07:44:497 YAMA LOG/(22381:23042): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 13:07:44:497 YAMA LOG/(22381:23042): Master 5 -> BytesRecibidos: 512 con: 'yamafs:/datos.csv' 
+[INFO] 13:07:44:498 YAMA LOG/(22381:23042): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 13:28:13:320 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 13:28:13:325 YAMA LOG/(22381:23308): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 13:28:13:327 YAMA LOG/(22381:23308): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 13:28:26:856 YAMA LOG/(22381:23308): Master 5 -> Se ha desconectado.
+[INFO] 13:28:26:857 YAMA LOG/(22381:23308): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 13:28:32:342 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 13:28:32:345 YAMA LOG/(22381:23343): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 13:28:32:348 YAMA LOG/(22381:23343): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 13:29:22:23 YAMA LOG/(22381:23343): Master 5 -> Se ha desconectado.
+[INFO] 13:29:22:24 YAMA LOG/(22381:23343): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 13:29:25:481 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 13:29:25:485 YAMA LOG/(22381:23390): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 13:29:25:486 YAMA LOG/(22381:23390): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 13:30:13:361 YAMA LOG/(22381:23390): Master 5 -> Se ha desconectado.
+[INFO] 13:30:13:362 YAMA LOG/(22381:23390): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 13:31:43:651 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 13:31:43:656 YAMA LOG/(22381:23473): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 13:31:43:660 YAMA LOG/(22381:23473): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 13:32:33:652 YAMA LOG/(22381:23473): Master 5 -> BytesRecibidos: 512 con: 'yamafs:/datos.csv' 
+[INFO] 13:32:33:653 YAMA LOG/(22381:23473): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 13:35:28:197 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 13:35:28:200 YAMA LOG/(22381:23526): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 13:35:28:201 YAMA LOG/(22381:23526): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 13:35:42:644 YAMA LOG/(22381:23526): Master 5 -> Se ha desconectado.
+[INFO] 13:35:42:645 YAMA LOG/(22381:23526): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 13:35:45:599 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 13:35:45:601 YAMA LOG/(22381:23564): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 13:35:45:602 YAMA LOG/(22381:23564): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 13:36:04:74 YAMA LOG/(22381:23564): Master 5 -> Se ha desconectado.
+[INFO] 13:36:04:75 YAMA LOG/(22381:23564): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 13:36:06:762 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 13:36:06:766 YAMA LOG/(22381:23600): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 13:36:06:767 YAMA LOG/(22381:23600): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 13:36:06:768 YAMA LOG/(22381:23600): Master 5 -> BytesRecibidos: 512 con: 'yamafs:/datos.csv' 
+[INFO] 13:36:06:769 YAMA LOG/(22381:23600): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 13:36:39:284 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 13:36:39:286 YAMA LOG/(22381:23635): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 13:36:39:288 YAMA LOG/(22381:23635): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 13:36:39:289 YAMA LOG/(22381:23635): Master 5 -> BytesRecibidos: 512 con: 'yamafs:/datos.csv' 
+[INFO] 13:36:39:289 YAMA LOG/(22381:23635): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 13:37:03:877 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 13:37:03:888 YAMA LOG/(22381:23669): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 13:37:03:888 YAMA LOG/(22381:23669): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 13:37:03:888 YAMA LOG/(22381:23669): Master 5 -> BytesRecibidos: 512 con: 'yamafs:/datos.csv' 
+[INFO] 13:37:03:889 YAMA LOG/(22381:23669): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 13:37:59:149 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 13:37:59:156 YAMA LOG/(22381:23704): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 13:37:59:157 YAMA LOG/(22381:23704): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 13:37:59:157 YAMA LOG/(22381:23704): Master 5 -> BytesRecibidos: 512 con: 'yamafs:/datos.csv' 
+[INFO] 13:37:59:157 YAMA LOG/(22381:23704): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 14:25:46:940 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 14:25:46:946 YAMA LOG/(22381:24496): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 14:25:46:951 YAMA LOG/(22381:24496): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 14:25:47:589 YAMA LOG/(22381:24496): Master 5 -> Se ha desconectado.
+[INFO] 14:25:47:590 YAMA LOG/(22381:24496): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 14:26:28:98 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 14:26:28:124 YAMA LOG/(22381:24533): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 14:26:28:128 YAMA LOG/(22381:24533): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 14:26:28:770 YAMA LOG/(22381:24533): Master 5 -> Se ha desconectado.
+[INFO] 14:26:28:772 YAMA LOG/(22381:24533): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 14:26:43:685 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 14:26:43:689 YAMA LOG/(22381:24570): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 14:26:43:695 YAMA LOG/(22381:24570): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 14:26:44:315 YAMA LOG/(22381:24570): Master 5 -> Se ha desconectado.
+[INFO] 14:26:44:316 YAMA LOG/(22381:24570): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 14:27:26:23 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 14:27:26:31 YAMA LOG/(22381:24619): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 14:27:26:32 YAMA LOG/(22381:24619): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 14:28:02:787 YAMA LOG/(22381:24619): Master 5 -> Se ha desconectado.
+[INFO] 14:28:02:787 YAMA LOG/(22381:24619): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 14:28:31:345 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 14:28:31:606 YAMA LOG/(22381:24691): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 14:28:31:607 YAMA LOG/(22381:24691): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 14:28:48:669 YAMA LOG/(22381:24691): Master 5 -> Se ha desconectado.
+[INFO] 14:28:48:673 YAMA LOG/(22381:24691): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 14:29:01:351 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 14:29:01:650 YAMA LOG/(22381:24741): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 14:29:01:650 YAMA LOG/(22381:24741): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 14:31:15:282 YAMA LOG/(22381:24741): Master 5 -> Se ha desconectado.
+[INFO] 14:31:15:284 YAMA LOG/(22381:24741): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 14:31:32:93 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 14:31:32:281 YAMA LOG/(22381:24836): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 14:31:32:282 YAMA LOG/(22381:24836): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 14:32:22:895 YAMA LOG/(22381:24836): Master 5 -> Se ha desconectado.
+[INFO] 14:32:22:896 YAMA LOG/(22381:24836): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 14:32:35:318 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 14:32:35:324 YAMA LOG/(22381:24900): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 14:32:35:325 YAMA LOG/(22381:24900): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 14:32:35:326 YAMA LOG/(22381:24900): Master 5 -> BytesRecibidos: 1 con: '' 
+[INFO] 14:32:35:326 YAMA LOG/(22381:24900): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 14:33:04:452 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 14:33:04:645 YAMA LOG/(22381:24943): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 14:33:04:645 YAMA LOG/(22381:24943): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 14:33:24:918 YAMA LOG/(22381:24943): Master 5 -> BytesRecibidos: 1 con: '' 
+[INFO] 14:33:24:918 YAMA LOG/(22381:24943): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 14:33:54:750 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 14:33:54:753 YAMA LOG/(22381:24993): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 14:33:54:759 YAMA LOG/(22381:24993): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 14:33:54:759 YAMA LOG/(22381:24993): Master 5 -> BytesRecibidos: 1 con: '' 
+[INFO] 14:33:54:759 YAMA LOG/(22381:24993): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 14:34:15:730 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 14:34:15:734 YAMA LOG/(22381:25028): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 14:34:15:735 YAMA LOG/(22381:25028): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 14:34:15:736 YAMA LOG/(22381:25028): Master 5 -> BytesRecibidos: 1 con: '�' 
+[INFO] 14:34:15:737 YAMA LOG/(22381:25028): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 14:36:16:592 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 14:36:17:451 YAMA LOG/(22381:25096): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 14:36:17:451 YAMA LOG/(22381:25096): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 14:38:21:985 YAMA LOG/(22381:25096): Master 5 -> Se ha desconectado.
+[INFO] 14:38:21:986 YAMA LOG/(22381:25096): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 14:38:36:118 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 14:38:36:123 YAMA LOG/(22381:25178): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 14:38:36:125 YAMA LOG/(22381:25178): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 14:38:36:125 YAMA LOG/(22381:25178): Master 5 -> BytesRecibidos: 1 con: '�' 
+[INFO] 14:38:36:126 YAMA LOG/(22381:25178): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 14:38:54:815 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 14:38:54:820 YAMA LOG/(22381:25216): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 14:38:54:820 YAMA LOG/(22381:25216): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 14:38:54:821 YAMA LOG/(22381:25216): Master 5 -> BytesRecibidos: 1 con: '�' 
+[INFO] 14:38:54:824 YAMA LOG/(22381:25216): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 14:39:06:730 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 14:39:06:739 YAMA LOG/(22381:25250): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 14:39:06:741 YAMA LOG/(22381:25250): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 14:39:06:742 YAMA LOG/(22381:25250): Master 5 -> BytesRecibidos: 1 con: '�' 
+[INFO] 14:39:06:742 YAMA LOG/(22381:25250): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 14:39:42:254 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 14:39:42:768 YAMA LOG/(22381:25299): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 14:39:42:768 YAMA LOG/(22381:25299): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 14:45:05:487 YAMA LOG/(22381:25299): Master 5 -> Se ha desconectado.
+[INFO] 14:45:05:488 YAMA LOG/(22381:25299): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 14:45:15:225 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 14:45:15:449 YAMA LOG/(22381:25415): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 14:45:15:449 YAMA LOG/(22381:25415): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 14:45:19:884 YAMA LOG/(22381:25415): Master 5 -> BytesRecibidos: 1 con: '@' 
+[INFO] 14:45:19:884 YAMA LOG/(22381:25415): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 14:46:26:51 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 14:46:26:55 YAMA LOG/(22381:25468): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 14:46:26:60 YAMA LOG/(22381:25468): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 14:46:26:60 YAMA LOG/(22381:25468): Master 5 -> BytesRecibidos: 4 con: '��' 
+[INFO] 14:46:26:62 YAMA LOG/(22381:25468): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 14:47:10:239 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 14:47:10:245 YAMA LOG/(22381:25516): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 14:47:10:247 YAMA LOG/(22381:25516): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 14:47:10:249 YAMA LOG/(22381:25516): Master 5 -> BytesRecibidos: 1 con: '�' 
+[INFO] 14:47:10:250 YAMA LOG/(22381:25516): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 14:48:37:334 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 14:48:37:339 YAMA LOG/(22381:25565): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 14:48:37:340 YAMA LOG/(22381:25565): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 14:48:37:343 YAMA LOG/(22381:25565): Master 5 -> BytesRecibidos: 1 con: '�' 
+[INFO] 14:48:37:344 YAMA LOG/(22381:25565): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 14:54:46:179 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 14:54:46:188 YAMA LOG/(22381:25625): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 14:54:46:188 YAMA LOG/(22381:25625): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 14:54:46:188 YAMA LOG/(22381:25625): Master 5 -> BytesRecibidos: 255 con: '' 
+[INFO] 14:54:46:189 YAMA LOG/(22381:25625): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 14:55:52:749 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 14:55:52:763 YAMA LOG/(22381:25670): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 14:55:52:768 YAMA LOG/(22381:25670): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 14:55:53:412 YAMA LOG/(22381:25670): Master 5 -> Se ha desconectado.
+[INFO] 14:55:53:412 YAMA LOG/(22381:25670): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 14:56:09:364 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 14:56:09:369 YAMA LOG/(22381:25708): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 14:56:09:370 YAMA LOG/(22381:25708): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 14:56:09:370 YAMA LOG/(22381:25708): Master 5 -> BytesRecibidos: 255 con: '' 
+[INFO] 14:56:09:372 YAMA LOG/(22381:25708): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 14:57:52:685 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 14:57:52:693 YAMA LOG/(22381:25781): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 14:57:52:694 YAMA LOG/(22381:25781): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 14:57:52:694 YAMA LOG/(22381:25781): Master 5 -> BytesRecibidos: 255 con: '' 
+[INFO] 14:57:52:695 YAMA LOG/(22381:25781): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 14:58:16:733 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 14:58:16:745 YAMA LOG/(22381:25826): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 14:58:16:745 YAMA LOG/(22381:25826): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 15:00:49:950 YAMA LOG/(22381:25826): Master 5 -> Se ha desconectado.
+[INFO] 15:00:49:951 YAMA LOG/(22381:25826): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 15:00:54:584 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 15:00:54:594 YAMA LOG/(22381:25937): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 15:00:54:594 YAMA LOG/(22381:25937): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 15:00:54:595 YAMA LOG/(22381:25937): Master 5 -> BytesRecibidos: 255 con: '' 
+[INFO] 15:00:54:596 YAMA LOG/(22381:25937): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 15:01:37:211 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 15:01:37:215 YAMA LOG/(22381:25975): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 15:01:37:216 YAMA LOG/(22381:25975): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 15:01:37:218 YAMA LOG/(22381:25975): Master 5 -> BytesRecibidos: 255 con: '' 
+[INFO] 15:01:37:218 YAMA LOG/(22381:25975): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 15:01:51:292 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 15:01:51:296 YAMA LOG/(22381:26017): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 15:01:51:297 YAMA LOG/(22381:26017): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 15:01:51:298 YAMA LOG/(22381:26017): Master 5 -> BytesRecibidos: 255 con: '' 
+[INFO] 15:01:51:298 YAMA LOG/(22381:26017): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 15:01:58:955 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 15:01:58:959 YAMA LOG/(22381:26034): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 15:01:58:960 YAMA LOG/(22381:26034): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 15:01:58:961 YAMA LOG/(22381:26034): Master 5 -> BytesRecibidos: 255 con: '' 
+[INFO] 15:01:58:964 YAMA LOG/(22381:26034): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 15:02:10:81 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 15:02:10:87 YAMA LOG/(22381:26086): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 15:02:10:88 YAMA LOG/(22381:26086): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 15:02:10:88 YAMA LOG/(22381:26086): Master 5 -> BytesRecibidos: 255 con: '' 
+[INFO] 15:02:10:88 YAMA LOG/(22381:26086): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 15:02:31:241 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 15:02:34:196 YAMA LOG/(22381:26141): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 15:02:34:196 YAMA LOG/(22381:26141): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 15:03:23:514 YAMA LOG/(22381:26141): Master 5 -> Se ha desconectado.
+[INFO] 15:03:23:514 YAMA LOG/(22381:26141): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 15:04:06:700 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 15:04:06:708 YAMA LOG/(22381:26218): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 15:04:06:709 YAMA LOG/(22381:26218): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 15:04:06:709 YAMA LOG/(22381:26218): Master 5 -> BytesRecibidos: 255 con: '' 
+[INFO] 15:04:06:709 YAMA LOG/(22381:26218): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 15:05:35:39 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 15:05:35:43 YAMA LOG/(22381:26286): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 15:05:35:47 YAMA LOG/(22381:26286): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 15:05:35:744 YAMA LOG/(22381:26286): Master 5 -> Se ha desconectado.
+[INFO] 15:05:35:746 YAMA LOG/(22381:26286): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 15:07:15:659 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 15:07:15:667 YAMA LOG/(22381:26388): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 15:07:15:668 YAMA LOG/(22381:26388): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 15:07:16:354 YAMA LOG/(22381:26388): Master 5 -> Se ha desconectado.
+[INFO] 15:07:16:356 YAMA LOG/(22381:26388): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 15:10:26:212 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 15:10:26:221 YAMA LOG/(22381:26517): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 15:10:26:222 YAMA LOG/(22381:26517): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 15:10:26:223 YAMA LOG/(22381:26517): Master 5 -> BytesRecibidos: 255 con: '' 
+[INFO] 15:10:26:224 YAMA LOG/(22381:26517): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 15:12:11:351 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 15:12:12:130 YAMA LOG/(22381:26587): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 15:12:12:130 YAMA LOG/(22381:26587): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 15:16:36:438 YAMA LOG/(22381:26587): Master 5 -> Se ha desconectado.
+[INFO] 15:16:36:438 YAMA LOG/(22381:26587): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 15:16:53:580 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 15:16:55:621 YAMA LOG/(22381:26728): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 15:16:55:621 YAMA LOG/(22381:26728): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 15:17:15:533 YAMA LOG/(22381:26728): Master 5 -> Se ha desconectado.
+[INFO] 15:17:15:534 YAMA LOG/(22381:26728): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 15:19:29:474 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 15:19:29:858 YAMA LOG/(22381:26829): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 15:19:29:859 YAMA LOG/(22381:26829): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 15:19:40:684 YAMA LOG/(22381:26829): Master 5 -> Se ha desconectado.
+[INFO] 15:19:40:685 YAMA LOG/(22381:26829): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 15:19:54:706 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 15:19:54:711 YAMA LOG/(22381:26860): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 15:19:54:713 YAMA LOG/(22381:26860): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 15:19:54:715 YAMA LOG/(22381:26860): Master 5 -> BytesRecibidos: 255 con: '' 
+[INFO] 15:19:54:715 YAMA LOG/(22381:26860): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 15:20:36:257 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 15:20:36:660 YAMA LOG/(22381:26912): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 15:20:36:661 YAMA LOG/(22381:26912): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 15:20:51:907 YAMA LOG/(22381:26912): Master 5 -> BytesRecibidos: 255 con: '' 
+[INFO] 15:20:51:908 YAMA LOG/(22381:26912): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 15:21:19:149 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 15:21:19:162 YAMA LOG/(22381:26969): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 15:21:19:163 YAMA LOG/(22381:26969): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 15:21:19:163 YAMA LOG/(22381:26969): Master 5 -> BytesRecibidos: 255 con: '' 
+[INFO] 15:21:19:164 YAMA LOG/(22381:26969): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 15:24:00:309 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 15:24:00:751 YAMA LOG/(22381:27029): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 15:24:00:752 YAMA LOG/(22381:27029): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 15:30:17:568 YAMA LOG/(22381:27029): Master 5 -> BytesRecibidos: 255 con: '' 
+[INFO] 15:30:17:568 YAMA LOG/(22381:27029): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 15:31:23:636 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 15:31:23:647 YAMA LOG/(22381:27136): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 15:31:23:648 YAMA LOG/(22381:27136): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 15:31:24:314 YAMA LOG/(22381:27136): Master 5 -> Se ha desconectado.
+[INFO] 15:31:24:315 YAMA LOG/(22381:27136): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 15:31:34:647 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 15:31:34:655 YAMA LOG/(22381:27173): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 15:31:34:656 YAMA LOG/(22381:27173): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 15:31:34:657 YAMA LOG/(22381:27173): Master 5 -> BytesRecibidos: 255 con: '' 
+[INFO] 15:31:34:658 YAMA LOG/(22381:27173): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 15:33:23:846 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 15:33:24:359 YAMA LOG/(22381:27225): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 15:33:24:359 YAMA LOG/(22381:27225): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 15:33:36:415 YAMA LOG/(22381:27225): Master 5 -> Se ha desconectado.
+[INFO] 15:33:36:416 YAMA LOG/(22381:27225): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 15:33:45:717 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 15:33:46:351 YAMA LOG/(22381:27284): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 15:33:46:351 YAMA LOG/(22381:27284): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 15:35:12:778 YAMA LOG/(22381:27284): Master 5 -> Se ha desconectado.
+[INFO] 15:35:12:779 YAMA LOG/(22381:27284): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 15:35:26:37 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 15:35:26:55 YAMA LOG/(22381:27361): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 15:35:26:56 YAMA LOG/(22381:27361): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 15:35:26:686 YAMA LOG/(22381:27361): Master 5 -> Se ha desconectado.
+[INFO] 15:35:26:687 YAMA LOG/(22381:27361): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 15:37:28:618 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 15:37:28:961 YAMA LOG/(22381:27439): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 15:37:28:962 YAMA LOG/(22381:27439): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 15:40:07:635 YAMA LOG/(22381:27439): Master 5 -> Se ha desconectado.
+[INFO] 15:40:07:636 YAMA LOG/(22381:27439): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 15:40:32:284 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 15:40:32:287 YAMA LOG/(22381:27528): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 15:40:32:288 YAMA LOG/(22381:27528): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 15:40:32:289 YAMA LOG/(22381:27528): Master 5 -> BytesRecibidos: 255 con: '' 
+[INFO] 15:40:32:290 YAMA LOG/(22381:27528): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 15:44:37:836 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 15:44:39:103 YAMA LOG/(22381:27587): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 15:44:39:103 YAMA LOG/(22381:27587): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[DEBUG] 15:44:44:518 YAMA LOG/(22381:27587): Master 5 -> BytesRecibidos: 255 con: '' 
+[INFO] 15:44:44:518 YAMA LOG/(22381:27587): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 15:44:57:892 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 15:44:58:256 YAMA LOG/(22381:27648): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 15:44:58:257 YAMA LOG/(22381:27648): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 15:46:18:446 YAMA LOG/(22381:27648): Master 5 -> Se ha desconectado.
+[INFO] 15:46:18:447 YAMA LOG/(22381:27648): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
+[INFO] 15:46:26:698 YAMA LOG/(22381:22386): Master 5 -> Conexión nueva aceptada.
+[DEBUG] 15:46:27:10 YAMA LOG/(22381:27751): Master 5 -> Solicitada la operación Nro: 0.
+[INFO] 15:46:27:11 YAMA LOG/(22381:27751): Master 5 -> Recibiendo datos iniciales desde Master. (CODOP: CodOP_Master_Solic_Nuevo_Trab -> 0)
+[ERROR] 15:53:19:927 YAMA LOG/(22381:27751): Master 5 -> Se ha desconectado.
+[INFO] 15:53:19:928 YAMA LOG/(22381:27751): Master 5 -> Finalizamos el trabajo con Master. Nos despedimos de Master...
