@@ -7,6 +7,7 @@
  Description : Hello World in C, Ansi-style
  ============================================================================
  */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <commons/log.h>
@@ -48,10 +49,10 @@ void reloj(int loop);
 void cargarConfiguraciones() {
 	logger = log_create("logWorker", "WORKER LOG", true, LOG_LEVEL_DEBUG);
 	log_info(logger, "<<Proceso Worker inició>>");
-	configuration = config_create("/home/utnso/workspace/tp-2017-2c-Yamaya/branches/socketsSimples/CONFIG_NODO");
+	configuration = config_create("/home/utnso/workspace/tp-2017-2c-Yamaya/CONFIG_NODO");
 	log_info(logger, "Intentando levantar el archivo de configuraciones.");
 	if(configuration==NULL){
-		log_error(logger, "Error el archivo de configuraciones no existe. (Revisa el Path, recuerda que lo comparte con el NODO)");
+		log_error(logger, "Error el archivo de configuraciones no existe.");
 		exit(-1);
 	}
 
