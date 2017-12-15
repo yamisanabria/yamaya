@@ -169,3 +169,45 @@
 [ERROR] 10:00:50:666 DataNode LOG/(8493:8493): Error en el send de enviar_saludo
 [ERROR] 10:00:50:666 DataNode LOG/(8493:8493): Error en el recv en el socket de recibir saludo
 [INFO] 10:00:50:666 DataNode LOG/(8493:8493): <<Proceso DataNode finalizó>>
+[INFO] 20:32:30:809 DataNode LOG/(7238:7238): <<Proceso DataNode inició>>
+[INFO] 20:32:30:832 DataNode LOG/(7238:7238): Intentando levantar el archivo de configuraciones.
+[ERROR] 20:32:30:832 DataNode LOG/(7238:7238): Error el archivo de configuraciones no existe.
+[INFO] 20:33:06:903 DataNode LOG/(7265:7265): <<Proceso DataNode inició>>
+[INFO] 20:33:06:904 DataNode LOG/(7265:7265): Intentando levantar el archivo de configuraciones.
+[INFO] 20:33:06:904 DataNode LOG/(7265:7265): La IP del FileSystem es: 127.0.0.1
+[INFO] 20:33:06:904 DataNode LOG/(7265:7265): El puerto del File System es: 1234
+[INFO] 20:33:06:904 DataNode LOG/(7265:7265): El nombre del Nodo es: NODO1
+[INFO] 20:33:06:904 DataNode LOG/(7265:7265): El puerto del Worker es: 5050
+[INFO] 20:33:06:904 DataNode LOG/(7265:7265): La ruta del Data.Bin es: /home/utnso/data.bin
+[INFO] 20:33:06:904 DataNode LOG/(7265:7265): El tamaño del DataBin es: 11
+[ERROR] 20:33:06:904 DataNode LOG/(7265:7265): Error al obtener el tamaño del DataBin
+[INFO] 20:33:06:904 DataNode LOG/(7265:7265): La IP del nodo actual es: 127.0.0.3
+[ERROR] 20:33:06:904 DataNode LOG/(7265:7265): Debido a errores en las configuraciones, se aborta la ejecución... (REVISE ARCH. CONFIGURACIONES)
+[INFO] 20:34:47:929 DataNode LOG/(7328:7328): <<Proceso DataNode inició>>
+[INFO] 20:34:47:929 DataNode LOG/(7328:7328): Intentando levantar el archivo de configuraciones.
+[INFO] 20:34:47:929 DataNode LOG/(7328:7328): La IP del FileSystem es: 127.0.0.1
+[INFO] 20:34:47:929 DataNode LOG/(7328:7328): El puerto del File System es: 1234
+[INFO] 20:34:47:930 DataNode LOG/(7328:7328): El nombre del Nodo es: NODO1
+[INFO] 20:34:47:930 DataNode LOG/(7328:7328): El puerto del Worker es: 5050
+[INFO] 20:34:47:930 DataNode LOG/(7328:7328): La ruta del Data.Bin es: /home/utnso/data.bin
+[INFO] 20:34:47:930 DataNode LOG/(7328:7328): El tamaño del DataBin es: 11
+[INFO] 20:34:47:930 DataNode LOG/(7328:7328): La IP del nodo actual es: 127.0.0.3
+[INFO] 20:34:47:941 DataNode LOG/(7328:7328): Archivo Databin creado correctamente
+[INFO] 20:34:47:942 DataNode LOG/(7328:7328): Tamanio archivo bin: 11534336
+[INFO] 20:34:47:964 DataNode LOG/(7328:7328): Cantidad maxima de bloques que soporta el nodo: 11
+[INFO] 20:34:47:967 DataNode LOG/(7328:7328): Intentando levantar conexión con FS.
+[INFO] 20:34:47:967 DataNode LOG/(7328:7328): [Cliente] Consiguiendo datos de red...
+[INFO] 20:34:47:967 DataNode LOG/(7328:7328): DATANODE Conectado a destino
+[INFO] 20:34:47:968 DataNode LOG/(7328:7328): Se envio saludo
+[INFO] 20:34:47:968 DataNode LOG/(7328:7328): Conexion Lograda con FS
+[INFO] 20:34:47:968 DataNode LOG/(7328:7328): Se establecio conexion con Filesystem
+[INFO] 20:34:47:968 DataNode LOG/(7328:7328): Envio todos mis datos al File System
+
+[INFO] 20:34:47:969 DataNode LOG/(7328:7328): Envie a FileSystem: ip=127.0.0.3, puerto=5050, nombre=NODO1, cantidad bloques=11
+
+[INFO] 20:34:47:969 DataNode LOG/(7328:7328): Datos enviados correctamente
+[INFO] 20:34:47:969 DataNode LOG/(7328:7328): Se ha creado el hilo para atender FILESYSTEM
+[DEBUG] 20:48:01:984 DataNode LOG/(7328:7329): Recibi el siguiente codigo de operacion: 48
+
+[DEBUG] 20:48:02:218 DataNode LOG/(7328:7329): Recibi el siguiente codigo de operacion: 48
+

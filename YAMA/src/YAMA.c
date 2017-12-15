@@ -8,6 +8,9 @@
  ============================================================================
  */
 
+<<<<<<< HEAD
+#include "yama.h"
+=======
 #include <stdio.h>
 #include <stdlib.h>
 #include <commons/log.h>
@@ -21,19 +24,24 @@
 #include "YAMA.h"
 #include <fcntl.h> // for open
 #include <unistd.h> // for close
+>>>>>>> refs/remotes/origin/socketsSimples
 
 t_log* logger;
 t_config* configuration;
 int configOk=1;
+
 char* ipFS;
 int puertoFS;
 int retardoPlanificacion;
 char* algoritmoBalanceo;
+<<<<<<< HEAD
+char* ArchivoOriginalDeYAMAFS;
+int sockFS;
+=======
 sem_t mutex_log;
 pthread_t hiloMaster;
 pthread_t hiloFileSystem;
 uint8_t socket_fs;
-t_list* tablaEstados;
 
 /** Longitud del buffer  */
 #define BUFFERSIZE 512
@@ -42,6 +50,7 @@ t_list* tablaEstados;
 #define CONEXIONES_MASTER_MAX_SIMULTANEAS 6 //Definimos cuantas maximas conexiones vamos a tener pendientes al mismo tiempo (Listen)
 #define CodOP_Master_Solic_Nuevo_Trab 0
 
+>>>>>>> refs/remotes/origin/socketsSimples
 
 void cargarConfiguraciones() {
 
@@ -57,6 +66,7 @@ void cargarConfiguraciones() {
 			ipFS = config_get_string_value(configuration, "FS_IP");
 
 
+			log_info(logger, "La IP del File System es: %s", ipFS);
 
 		} else {
 
@@ -204,8 +214,9 @@ int recibirYDeserializar(T_master_yama_start *estructuraARecibir, int sockN) {
 
 	estructuraARecibir->archivo_ruta_destino_YamaFs = malloc(nombre_long + 1);
 	memset(estructuraARecibir->archivo_ruta_destino_YamaFs, '\0', nombre_long + 1);
-	estado = recv(sockN, estructuraARecibir->archivo_ruta_destino_YamaFs, nombre_long, SOCK_STREAM); //TODO Revisar etiqueta para borrar excedentes en recv SOCK_STREAM
+	estado = recv(sockN, estructuraARecibir->archivo_ruta_destino_YamaFs, nombre_long, 0);
     if (!estado)return 0;
+
 
 
 	/*//Obtengo el puerto
@@ -288,6 +299,166 @@ void* socketListenerMaster(void* param){
 return 0;
 }
 
+int conectar_cliente (int puerto, char ip_destino[16],t_log* logger)
+{
+	log_info(logger, "Intentando levantar conexión con FS.");
+
+	int sock= 0;
+	struct sockaddr_in direccion_cliente;
+	direccion_cliente.sin_family=AF_INET;
+	direccion_cliente.sin_port=htons(puerto);
+	direccion_cliente.sin_addr.s_addr=inet_addr(ip_destino);
+	memset(&(direccion_cliente.sin_zero),0,8);
+
+	log_info(logger, "[Cliente] Consiguiendo datos de red...");
+
+	//creo el socket
+	if((sock=socket(AF_INET,SOCK_STREAM,0))==-1)
+	{
+
+		log_error(logger, "Error al abrir el socket");
+		close(sock);
+		return -1;
+	}
+
+	//conecto por la ip dada
+	if(connect(sock,(struct sockaddr *)&direccion_cliente,sizeof(struct sockaddr))==-1)
+	{
+		log_error(logger, "Problema al levantar conexión con FS en IP:%s PUERTO:%i (¿FS se encuentra levantado?)",ip_destino,puerto);
+		close(sock);
+		return -1;
+	}
+
+	log_info(logger, "YAMA Conectado a destino");
+
+	return sock;
+}
+
+void conectar_FS(void)
+{
+	sockFS = conectar_cliente(puertoFS,ipFS,logger);
+
+	if(sockFS == -1)
+	{
+		log_error(logger,"Falló la conexión con FileSystem.");
+		exit(1);
+	}
+
+	enviar_saludo(YAMA,sockFS,logger,HANDSHAKE);
+	recibir_saludo(FILESYSTEM,sockFS,logger,HANDSHAKEOK);
+	log_info(logger,"Se establecio conexion con Filesystem");
+	printf("Se establecio conexion con Filesystem \n");
+
+	//creo el hilo para atender FS
+	pthread_t thFS;
+	pthread_create(&thFS, NULL,(void*)atender_FS, NULL);
+	log_info(logger, "Se ha creado el hilo para atender FILESYSTEM");
+
+	pthread_join(thFS, NULL);
+
+}
+
+void atender_FS (void* param)
+{
+	while(1)
+	{
+		t_mensaje* mensaje = calloc(SIZE_MSG,1);
+		if(recv(sockFS,mensaje,SIZE_MSG,0)<=0)
+		{
+			printf("Error intentando recibir mensaje\n");
+			printf("FileSystem se ha desconectado\n");
+			exit(1);
+		}
+
+	}
+}
+
+int enviar_saludo(int id_origen, int sock, t_log* logger,int tipo_mensaje)
+{
+	// inicializo variables
+	char* buffer;
+	int numbytes;
+
+	//creo el buffer
+	if((buffer = (char*) malloc (sizeof(char) * MAXDATASIZE)) == NULL)
+	{
+		log_error(logger,"Error al reservar memoria para el buffer");
+		return -1;
+	}
+
+	// creo mensaje y le asigno valores correspondientes
+
+	t_mensaje mensaje;
+	mensaje.tipo = tipo_mensaje;
+	mensaje.id_proceso = id_origen;
+	memcpy(buffer,&mensaje,SIZE_MSG);
+
+	// mando el handshake a destino
+	if((numbytes=send(sock,&mensaje,SIZE_MSG,0))<=0)
+	{
+		log_error(logger, "Error en el send de enviar_saludo");
+		return -1;
+	}
+
+	free(buffer);
+
+	log_info(logger, "Se envio saludo");
+	return sock;
+}
+
+// Funcion recibe HANDSHAKE o HANDSHAKEOK dependiendo del tipo de mensaje especificado (#define)
+// Retorna int con valor -1 en caso de error y 0 en caso de exito
+
+int recibir_saludo(int id_destino, int sock, t_log* logger,int tipo_mensaje)
+{
+	//pongo en 0 el buffer para recibir
+	char* buffer;
+
+	//creo el buffer
+		if((buffer = (char*) malloc (sizeof(char) * MAXDATASIZE)) == NULL)
+		{
+			log_error(logger,"Error al reservar memoria para el buffer");
+			return -1;
+		}
+
+	memset(buffer,'\0',MAXDATASIZE);
+	t_mensaje mensaje;
+	int numbytes;
+
+	//recibo en el buffer
+	if((numbytes=recv(sock,buffer,SIZE_MSG,0))<=0 )
+	{
+		log_error(logger, "Error en el recv en el socket de recibir saludo");
+		close(sock);
+		return -1;
+	}
+
+	//copio la respuesta del buffer
+	memcpy(&mensaje,buffer,SIZE_MSG);
+
+
+	switch (mensaje.tipo)
+		{
+		case HANDSHAKEOK:
+			log_info(logger, "Conexion Lograda con FS");
+//	         free(buffer);  //Lo comento por que me esta generando *** Error in `./datanode': double free or corruption (top): 0x08846890 ***
+	                        //[1]    10618 abort (core dumped)  ./datanode
+		break;
+		case HANDSHAKE:
+			log_info(logger, "Recibi HANDSHAKE de FS");
+			log_info(logger, "Conexion Lograda con FS");
+			free(buffer);
+		break;
+		default:
+			log_error(logger, "Error en el tipo de mensaje enviado");
+			free(buffer);
+		break;
+		}
+
+		free(buffer);
+
+	return 0;
+}
 
 
 int solicitarInformacionAlFS(T_master_yama_start *estructuraConDatos, int fs_sock){
@@ -340,101 +511,8 @@ int solicitarInformacionAlFS(T_master_yama_start *estructuraConDatos, int fs_soc
 			sem_post(&mutex_log);
 		}
 
-		sem_wait(&mutex_log);
-		log_info(logger, "Esperando recibir lista de nodos de FileSystem para el archivo %s\n",estructuraConDatos->archivo_ruta_origen_YamaFs);
-		sem_post(&mutex_log);
-//RECIBO INFORMACION DE BLOQUES QUE CONTIENEN EL PATH
-		int cantidad=0;
-		t_nodo_bloque* nodoARecibir=malloc(sizeof(t_nodo_bloque));
-		uint8_t cantidadBloquesQueComponenArchivo=0;
-
-		if((cantidad=recv(fs_sock,&cantidadBloquesQueComponenArchivo,sizeof(cantidadBloquesQueComponenArchivo),0))<0){
-			sem_wait(&mutex_log);
-			log_error(logger, "Error %s. (¡Revise código!)",cantidadBloquesQueComponenArchivo);
-			sem_post(&mutex_log);
-			return -1;
-		}else{
-			sem_wait(&mutex_log);
-			log_info(logger, "Valor recibido: %i.(CONTADOR=%i)",cantidadBloquesQueComponenArchivo,cantidad);
-			sem_post(&mutex_log);
-		}
-
-
-
-		int i=0;
-		t_list* listaParaAlgoritmo = list_create();
-		for (i = 0; i < cantidadBloquesQueComponenArchivo; ++i) {
-			//ID NODO
-			int contador=recv(fs_sock,&nodoARecibir->id_nodo,sizeof(nodoARecibir->id_nodo),0);
-			sem_wait(&mutex_log);
-			log_info(logger, "Valor id_nodo : %i. (CONTADOR=%i) (SIZEOF=%i)",nodoARecibir->id_nodo,contador,sizeof(nodoARecibir->id_nodo));
-			sem_post(&mutex_log);
-
-			//NRO DE BLOQUE NODO
-			contador=recv(fs_sock,&nodoARecibir->nro_bloque_nodo,sizeof(nodoARecibir->nro_bloque_nodo),0);
-			sem_wait(&mutex_log);
-			log_info(logger, "Valor nro_bloque_nodo : %i.(CONTADOR=%i)(SIZEOF=%i)",nodoARecibir->nro_bloque_nodo,contador,sizeof(nodoARecibir->nro_bloque_nodo));
-			sem_post(&mutex_log);
-
-			//NRO DE BLOQUE ARCHIVO
-			contador=recv(fs_sock,&nodoARecibir->nro_bloque_archi,sizeof(nodoARecibir->nro_bloque_archi),0);
-			sem_wait(&mutex_log);
-			log_info(logger, "Valor nro_bloque_archi : %i.(CONTADOR=%i)(SIZEOF=%i)",nodoARecibir->nro_bloque_archi,contador,sizeof(nodoARecibir->nro_bloque_archi));
-			sem_post(&mutex_log);
-
-			//IP
-			contador=recv(fs_sock,&nodoARecibir->ip_long,sizeof(nodoARecibir->ip_long),0);
-			sem_wait(&mutex_log);
-			log_info(logger, "Valor iplong : %i.(CONTADOR=%i)(SIZEOF=%i)",nodoARecibir->ip_long,contador,sizeof(nodoARecibir->nro_bloque_archi));
-			sem_post(&mutex_log);
-
-			nodoARecibir->ip=malloc(nodoARecibir->ip_long);
-			contador=recv(fs_sock,nodoARecibir->ip,nodoARecibir->ip_long,0);
-			sem_wait(&mutex_log);
-			log_info(logger, "Valor ip : %s.(CONTADOR=%i)(SIZEOF=%i)",nodoARecibir->ip,contador,nodoARecibir->ip_long);
-			sem_post(&mutex_log);
-
-			//NRO DE PUERTO
-			contador=recv(fs_sock,&nodoARecibir->puerto,sizeof(nodoARecibir->puerto),0);
-			sem_wait(&mutex_log);
-			log_info(logger, "Valor puerto : %i.(CONTADOR=%i)(SIZEOF=%i)",nodoARecibir->puerto,contador,sizeof(nodoARecibir->puerto));
-			sem_post(&mutex_log);
-
-			//NOMBRE ARCHIVO
-			contador=recv(fs_sock,&nodoARecibir->nombre_archivo_long,sizeof(nodoARecibir->nombre_archivo_long),0);
-			sem_wait(&mutex_log);
-			log_info(logger, "Valor nombre_archivo_long : %i.(CONTADOR=%i)(SIZEOF=%i)",nodoARecibir->nombre_archivo_long,contador,sizeof(nodoARecibir->nombre_archivo_long));
-			sem_post(&mutex_log);
-
-			nodoARecibir->nombre_archivo=malloc(nodoARecibir->nombre_archivo_long);
-			contador=recv(fs_sock,nodoARecibir->nombre_archivo,nodoARecibir->nombre_archivo_long,0);
-			sem_wait(&mutex_log);
-			log_info(logger, "Valor nombre_archivo : %s.(CONTADOR=%i)(SIZEOF=%i)",nodoARecibir->nombre_archivo,contador,nodoARecibir->nombre_archivo_long);
-			sem_post(&mutex_log);
-
-			list_add(listaParaAlgoritmo,nodoARecibir);
-
-		}
-		//YA TENGO TODOS LOS BLOQUES PLANIFICO
-		if(strcmp(algoritmoBalanceo,"CLOCK") == 0){
-		//algoritmoDePlanificacionClock(listaParaAlgoritmo,p,id_job,nombreArchivoOriginal);
-		}
-		else if(strcmp(algoritmoBalanceo,"WCLOCK") == 0){
-		//algoritmoDePlanificacionWClock(listaParaAlgoritmo,p,id_job,nombreArchivoOriginal);
-		}
-		else{
-			log_error(logger, "Se ha recibido un algoritmo de balanceo incorrecto. (¡Verifica el Archivo de Configuraciones!) [CORRECTO= CLOCK o WCLOCK]");
-		}
-
 	return 0;
 }
-
-
-//ALGORITMO DE PLANIFICACION CLOCK
-void algoritmoDePlanificacionClock(listaParaAlgoritmo,p,id_job,nombreArchivoOriginal){
-
-}
-
 
 void* conectarConFS(void* param){
 	log_info(logger, "Intentando levantar conexión con FS.");
@@ -462,8 +540,17 @@ return 0;
 
 
 int main(void) {
+<<<<<<< HEAD
+
+=======
 	sem_init(&mutex_log,0,1);
+>>>>>>> refs/remotes/origin/socketsSimples
 	cargarConfiguraciones();
+<<<<<<< HEAD
+	//printf("Valor recibido %s \n", argv[1]);
+	conectar_FS();
+	//cargarServidorParaEscucharAMaster();
+=======
 
 	if(pthread_create(&hiloMaster,NULL,(void*) socketListenerMaster,NULL)<0){
 		log_error(logger, "Falló al crear el hilo para escuchar a Master. (¡Revise Código!)");
@@ -478,11 +565,10 @@ int main(void) {
 
 
 
+>>>>>>> refs/remotes/origin/socketsSimples
 
 
 	log_info(logger, "<<Proceso YAMA Finalizado>>");
 
 
 }
-
-
